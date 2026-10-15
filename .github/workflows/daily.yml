@@ -107,15 +107,21 @@ jobs:
           DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
           DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}
           SERVERCHAN_KEY: ${{ secrets.SERVERCHAN_KEY }}
-          # ---- QQ 推送（两条路，配哪个用哪个）----
+          # ---- QQ 推送（三条路，配哪个用哪个）----
           # 路一：QQ 邮箱。手机 QQ 的「QQ邮箱提醒」会弹通知，零第三方依赖，最稳。
           #   QQ_MAIL_AUTH_CODE 是邮箱设置里生成的 16 位授权码，不是 QQ 登录密码。
           # 路二：Qmsg 酱。真正的 QQ 消息，需要在 qmsg.zendee.cn 拿 key。
+          # 路三：QQ 机器人（腾讯官方）。真正的 QQ 消息，无需长连接，一个 POST 就发。
+          #   需要 AppID + AppSecret + 接收方 openid（不是 QQ 号），见 README。
           QQ_MAIL_USER: ${{ secrets.QQ_MAIL_USER }}
           QQ_MAIL_AUTH_CODE: ${{ secrets.QQ_MAIL_AUTH_CODE }}
           QQ_MAIL_TO: ${{ secrets.QQ_MAIL_TO }}
           QMSG_KEY: ${{ secrets.QMSG_KEY }}
           QMSG_QQ: ${{ secrets.QMSG_QQ }}
+          QQ_BOT_APP_ID: ${{ secrets.QQ_BOT_APP_ID }}
+          QQ_BOT_SECRET: ${{ secrets.QQ_BOT_SECRET }}
+          QQ_BOT_USER_OPENID: ${{ secrets.QQ_BOT_USER_OPENID }}
+          QQ_BOT_GROUP_OPENID: ${{ secrets.QQ_BOT_GROUP_OPENID }}
           GENERIC_WEBHOOK_URL: ${{ secrets.GENERIC_WEBHOOK_URL }}
           GENERIC_WEBHOOK_TOKEN: ${{ secrets.GENERIC_WEBHOOK_TOKEN }}
           # 通知里附带的 Pages 链接（在 Variables 里配，不是 Secrets）

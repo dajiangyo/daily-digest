@@ -1,13 +1,9 @@
 {
   "date": "2026-10-15",
-  "generated_at": "2026-10-15T17:48:41.692112+08:00",
+  "generated_at": "2026-10-15T18:32:18.019376+08:00",
   "count": 24,
-  "errors": [
-    "GitHub Trending · 全语言: GET https://github.com/trending 重试 3 次仍失败: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /trending?since=daily (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x1a4a3eba0b0>, 'Connection to github.com timed out. (connect timeout=20)'))",
-    "GitHub Trending · Python: GET https://github.com/trending 重试 3 次仍失败: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /trending?since=daily&language=python (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x1a4a3ebb8e0>, 'Connection to github.com timed out. (connect timeout=20)'))",
-    "GitHub Trending · TypeScript: GET https://github.com/trending 重试 3 次仍失败: HTTPSConnectionPool(host='github.com', port=443): Max retries exceeded with url: /trending?since=daily&language=typescript (Caused by ConnectTimeoutError(<HTTPSConnection(host='github.com', port=443) at 0x1a4a3eba800>, 'Connection to github.com timed out. (connect timeout=20)'))"
-  ],
-  "summary": "# 每日速览 2026-10-15\n\n共 24 个条目，来自 1 个源。\n\n## 值得关注\n\n- **Things to know when you get cancer** — Hacker News\n  [打开原文](https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/)\n- **How Amazon pushes up prices all across the Internet** — Hacker News\n  [打开原文](https://www.not-ship.com/how-amazon-pushes-up-prices-all-across-the-internet/)\n- **Do dentists know what they're doing?** — Hacker News\n  [打开原文](https://mapwriting.substack.com/p/dentists)\n- **OpenCode 2.0** — Hacker News\n  [打开原文](https://anoma.ly/notes/opencode-2-0/)\n- **Tiny Little Office** — Hacker News\n  [打开原文](https://tinylittleoffice.com/)\n\n## 分栏速览\n\n- **综合排行**（24 条）：Things to know when you get cancer、How Amazon pushes up prices all across the Internet、Do dentists know what they're doing?、OpenCode 2.0、Tiny Little Office、Americans' social activity has steeply declined in the past 30 years、Why is every rationalist blog post way too long?、Better HTTP/1 connection reuse in Go 1.27\n\n## 分类速览\n\n- **Hacker News**（24 条）：Things to know when you get cancer、How Amazon pushes up prices all across the Internet、Do dentists know what they're doing?、OpenCode 2.0、Tiny Little Office、Americans' social activity has steeply declined in the past 30 years、Why is every rationalist blog post way too long?、Better HTTP/1 connection reuse in Go 1.27\n\n## 一句话提醒\n\n当前为无 AI 模式（未配置 LLM_API_KEY），以上内容由模板生成。",
+  "errors": [],
+  "summary": "今天整体风向是 Agent 正在系统性接管开发、安全与音视频工具链，核心诉求从“更强的模型”转向“更本地、更跨平台、更省 token 的落地方式”。\n\n### 值得关注\n\n*   **morluto/rea（今日 +41034 star）**：定位是用 Agent 从应用行为到原生二进制一键逆向，当日暴涨 4 万 star 远超榜单其他项目，说明市场对“自动化逆向”有极强的刚需，值得看它的 Agent 如何拆解闭源逻辑。\n*   **debpalash/VoiceStudio（今日 +3538 star）**：开源、完全本地的 ElevenLabs 平替，覆盖语音克隆、声音设计、视频配音、听写转录到有声书，支持 646 种语言，今天值得看是因为它把高成本的语音商业服务拉回本地隐私可控。\n*   **xtool-org/xtool（今日 +1502 star）**：用 SwiftPM 在 Linux/Windows/macOS 上构建和部署 iOS 应用的跨平台 Xcode 替代品，打破了 iOS 开发必须绑定 macOS 的限制，对小团队和 CI 场景意义很大。\n*   **vxcontrol/pentagi（今日 +1025 star）**：全自主的 AI Agent 渗透测试系统，能执行复杂渗透任务，与同日走红的逆向工具形成呼应，代表了安全领域从辅助工具向自主 Agent 的跃迁。\n\n### 榜单观察 · 综合排行\n\n综合排行呈现出明显的“Agent 工具化”共性：GitHub 侧 Python 与 TypeScript 几乎平分秋色，Python 承载语音、微调、审计类 Agent，TypeScript 则集中在为 Agent 设计的视频渲染、上下文优化和技能分发；选题上逆向/安全（rea、ghidra、pentagi）、音视频生成（VoiceStudio、hyperframes）与开发者提效（xtool、context-mode、orac）三线并行，共同点是强调本地化、跨平台和成本控制。而 Hacker News 侧则与之形成反差，更关注技术背后的社会与商业代价，讨论热度集中在医疗、消费定价与社会连接等议题上。\n\n### 分类速览\n\n*   **Agent 编码与上下文工程**：围绕订阅复用、多 Agent 并行、上下文窗口压缩和 YAML 一键微调，核心是让现有模型在有限资源下跑得更久更便宜。\n*   **音视频与内容生成**：从声明式 HTML 生成视频到开源剪辑工具，趋势是把创作能力封装成 Agent 可直接调用的接口。\n*   **安全、逆向与审计**：自主渗透、模型审查移除与传统逆向框架同时上榜，攻防两端都在被 Agent 重构。\n*   **开发基建与本地化系统**：跨平台构建、智能家居中枢和语言本身，体现对“去厂商锁定、本地优先”的持续追求。\n*   **社区热议议题**：Hacker News 关注点落在健康、平台经济与社会行为变迁，提供了工具热潮之外的冷思考视角。\n\n### 一句话提醒\n\n今天最该盯住的是 Agent 逆向与自主安全这条线——当 rea 这类项目一天吸星 4 万，意味着漏洞挖掘和合规审计的工作流可能很快被重写，别只当热度看。",
   "sections": [
     {
       "id": "main",
@@ -17,6 +13,38 @@
   ],
   "items": [
     {
+      "title": "Alishahryar1/free-claude-code",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 1.0,
+      "desc": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
+      "extra": {
+        "stars_today": 540,
+        "stars_total": 60643,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 1.0,
+        "raw_score": 54606.43
+      }
+    },
+    {
+      "title": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "source": "GitHub Trending · 全语言",
+      "section": "main",
+      "score": 1.0,
+      "desc": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "extra": {
+        "stars_today": 3538,
+        "stars_total": 67697,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 1.0,
+        "raw_score": 354476.97
+      }
+    },
+    {
       "title": "Things to know when you get cancer",
       "url": "https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/",
       "source": "Hacker News",
@@ -25,11 +53,59 @@
       "desc": "",
       "extra": {
         "hn_id": 50093568,
-        "comments": 337,
+        "comments": 348,
         "discuss": "https://news.ycombinator.com/item?id=50093568",
         "section": "main",
         "norm_score": 1.0,
-        "raw_score": 1361.0
+        "raw_score": 1396.0
+      }
+    },
+    {
+      "title": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "source": "GitHub Trending · TypeScript",
+      "section": "main",
+      "score": 1.0,
+      "desc": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "extra": {
+        "stars_today": 41034,
+        "stars_total": 256409,
+        "language": "TypeScript",
+        "section": "main",
+        "norm_score": 1.0,
+        "raw_score": 4105964.09
+      }
+    },
+    {
+      "title": "MakazhanAlpamys/Soup",
+      "url": "https://github.com/MakazhanAlpamys/Soup",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.437,
+      "desc": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.",
+      "extra": {
+        "stars_today": 247,
+        "stars_total": 9074,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.4372,
+        "raw_score": 24790.74
+      }
+    },
+    {
+      "title": "ifixai-ai/iFixAi",
+      "url": "https://github.com/ifixai-ai/iFixAi",
+      "source": "GitHub Trending · 全语言",
+      "section": "main",
+      "score": 0.589,
+      "desc": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
+      "extra": {
+        "stars_today": 2109,
+        "stars_total": 28077,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.5886,
+        "raw_score": 211180.77
       }
     },
     {
@@ -37,15 +113,63 @@
       "url": "https://www.not-ship.com/how-amazon-pushes-up-prices-all-across-the-internet/",
       "source": "Hacker News",
       "section": "main",
-      "score": 0.611,
+      "score": 0.602,
       "desc": "",
       "extra": {
         "hn_id": 50084757,
-        "comments": 642,
+        "comments": 645,
         "discuss": "https://news.ycombinator.com/item?id=50084757",
         "section": "main",
-        "norm_score": 0.6111,
-        "raw_score": 834.0
+        "norm_score": 0.6023,
+        "raw_score": 842.0
+      }
+    },
+    {
+      "title": "heygen-com/hyperframes",
+      "url": "https://github.com/heygen-com/hyperframes",
+      "source": "GitHub Trending · TypeScript",
+      "section": "main",
+      "score": 0.025,
+      "desc": "Write HTML. Render video. Built for agents.",
+      "extra": {
+        "stars_today": 1089,
+        "stars_total": 64053,
+        "language": "TypeScript",
+        "section": "main",
+        "norm_score": 0.0252,
+        "raw_score": 109540.53
+      }
+    },
+    {
+      "title": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.318,
+      "desc": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "extra": {
+        "stars_today": 181,
+        "stars_total": 38193,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.3181,
+        "raw_score": 18481.93
+      }
+    },
+    {
+      "title": "xtool-org/xtool",
+      "url": "https://github.com/xtool-org/xtool",
+      "source": "GitHub Trending · 全语言",
+      "section": "main",
+      "score": 0.414,
+      "desc": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
+      "extra": {
+        "stars_today": 1502,
+        "stars_total": 11363,
+        "language": "Swift",
+        "section": "main",
+        "norm_score": 0.4139,
+        "raw_score": 150313.63
       }
     },
     {
@@ -53,15 +177,63 @@
       "url": "https://mapwriting.substack.com/p/dentists",
       "source": "Hacker News",
       "section": "main",
-      "score": 0.511,
+      "score": 0.51,
       "desc": "",
       "extra": {
         "hn_id": 50050553,
-        "comments": 507,
+        "comments": 520,
         "discuss": "https://news.ycombinator.com/item?id=50050553",
         "section": "main",
-        "norm_score": 0.5114,
-        "raw_score": 699.0
+        "norm_score": 0.5104,
+        "raw_score": 714.0
+      }
+    },
+    {
+      "title": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "source": "GitHub Trending · TypeScript",
+      "section": "main",
+      "score": 0.021,
+      "desc": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "extra": {
+        "stars_today": 919,
+        "stars_total": 92933,
+        "language": "TypeScript",
+        "section": "main",
+        "norm_score": 0.0211,
+        "raw_score": 92829.33
+      }
+    },
+    {
+      "title": "p-e-w/heretic",
+      "url": "https://github.com/p-e-w/heretic",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.318,
+      "desc": "Fully automatic censorship removal for language models",
+      "extra": {
+        "stars_today": 181,
+        "stars_total": 35339,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.3176,
+        "raw_score": 18453.39
+      }
+    },
+    {
+      "title": "vxcontrol/pentagi",
+      "url": "https://github.com/vxcontrol/pentagi",
+      "source": "GitHub Trending · 全语言",
+      "section": "main",
+      "score": 0.277,
+      "desc": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+      "extra": {
+        "stars_today": 1025,
+        "stars_total": 30198,
+        "language": "Go",
+        "section": "main",
+        "norm_score": 0.2775,
+        "raw_score": 102801.98
       }
     },
     {
@@ -69,15 +241,63 @@
       "url": "https://anoma.ly/notes/opencode-2-0/",
       "source": "Hacker News",
       "section": "main",
-      "score": 0.449,
+      "score": 0.447,
       "desc": "",
       "extra": {
         "hn_id": 50094994,
-        "comments": 241,
+        "comments": 248,
         "discuss": "https://news.ycombinator.com/item?id=50094994",
         "section": "main",
-        "norm_score": 0.4487,
-        "raw_score": 614.0
+        "norm_score": 0.4472,
+        "raw_score": 626.0
+      }
+    },
+    {
+      "title": "vercel-labs/skills",
+      "url": "https://github.com/vercel-labs/skills",
+      "source": "GitHub Trending · TypeScript",
+      "section": "main",
+      "score": 0.015,
+      "desc": "The open agent skills tool - npx skills",
+      "extra": {
+        "stars_today": 658,
+        "stars_total": 35023,
+        "language": "TypeScript",
+        "section": "main",
+        "norm_score": 0.0146,
+        "raw_score": 66150.23
+      }
+    },
+    {
+      "title": "home-assistant/core",
+      "url": "https://github.com/home-assistant/core",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.26,
+      "desc": "🏡 Open source home automation that puts local control and privacy first.",
+      "extra": {
+        "stars_today": 145,
+        "stars_total": 91514,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.2602,
+        "raw_score": 15415.14
+      }
+    },
+    {
+      "title": "NationalSecurityAgency/ghidra",
+      "url": "https://github.com/NationalSecurityAgency/ghidra",
+      "source": "GitHub Trending · 全语言",
+      "section": "main",
+      "score": 0.274,
+      "desc": "Ghidra is a software reverse engineering (SRE) framework",
+      "extra": {
+        "stars_today": 1008,
+        "stars_total": 88060,
+        "language": "Java",
+        "section": "main",
+        "norm_score": 0.2742,
+        "raw_score": 101680.6
       }
     },
     {
@@ -85,15 +305,63 @@
       "url": "https://tinylittleoffice.com/",
       "source": "Hacker News",
       "section": "main",
-      "score": 0.319,
+      "score": 0.322,
       "desc": "",
       "extra": {
         "hn_id": 50096142,
-        "comments": 70,
+        "comments": 72,
         "discuss": "https://news.ycombinator.com/item?id=50096142",
         "section": "main",
-        "norm_score": 0.3188,
-        "raw_score": 438.0
+        "norm_score": 0.3223,
+        "raw_score": 452.0
+      }
+    },
+    {
+      "title": "anomalyco/opencode",
+      "url": "https://github.com/anomalyco/opencode",
+      "source": "GitHub Trending · TypeScript",
+      "section": "main",
+      "score": 0.007,
+      "desc": "The open source coding agent.",
+      "extra": {
+        "stars_today": 320,
+        "stars_total": 213690,
+        "language": "TypeScript",
+        "section": "main",
+        "norm_score": 0.0068,
+        "raw_score": 34136.9
+      }
+    },
+    {
+      "title": "python/cpython",
+      "url": "https://github.com/python/cpython",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.229,
+      "desc": "The Python programming language",
+      "extra": {
+        "stars_today": 130,
+        "stars_total": 77560,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.2293,
+        "raw_score": 13775.6
+      }
+    },
+    {
+      "title": "mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
+      "source": "GitHub Trending · 全语言",
+      "section": "main",
+      "score": 0.255,
+      "desc": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
+      "extra": {
+        "stars_today": 947,
+        "stars_total": 29538,
+        "language": "TypeScript",
+        "section": "main",
+        "norm_score": 0.2551,
+        "raw_score": 94995.38
       }
     },
     {
@@ -101,303 +369,31 @@
       "url": "https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-steeply-declined-in-the-past-30-years",
       "source": "Hacker News",
       "section": "main",
-      "score": 0.291,
+      "score": 0.293,
       "desc": "",
       "extra": {
         "hn_id": 50089921,
-        "comments": 377,
+        "comments": 383,
         "discuss": "https://news.ycombinator.com/item?id=50089921",
         "section": "main",
-        "norm_score": 0.2908,
-        "raw_score": 400.0
+        "norm_score": 0.2929,
+        "raw_score": 411.0
       }
     },
     {
-      "title": "Why is every rationalist blog post way too long?",
-      "url": "https://alexwennerberg.com/blog/2026-10-13-long.html",
-      "source": "Hacker News",
+      "title": "OpenCut-app/OpenCut",
+      "url": "https://github.com/OpenCut-app/OpenCut",
+      "source": "GitHub Trending · TypeScript",
       "section": "main",
-      "score": 0.258,
-      "desc": "",
+      "score": 0.006,
+      "desc": "The open-source CapCut alternative",
       "extra": {
-        "hn_id": 50083028,
-        "comments": 299,
-        "discuss": "https://news.ycombinator.com/item?id=50083028",
+        "stars_today": 301,
+        "stars_total": 94586,
+        "language": "TypeScript",
         "section": "main",
-        "norm_score": 0.2583,
-        "raw_score": 356.0
-      }
-    },
-    {
-      "title": "Better HTTP/1 connection reuse in Go 1.27",
-      "url": "https://go.dev/blog/http-connection-reuse",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.184,
-      "desc": "",
-      "extra": {
-        "hn_id": 50090369,
-        "comments": 36,
-        "discuss": "https://news.ycombinator.com/item?id=50090369",
-        "section": "main",
-        "norm_score": 0.1838,
-        "raw_score": 255.0
-      }
-    },
-    {
-      "title": "LFM2.5-24B-A2B: Built for fast on-device agents",
-      "url": "https://www.liquid.ai/blog/lfm2-5-24b-a2b",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.152,
-      "desc": "",
-      "extra": {
-        "hn_id": 50097369,
-        "comments": 44,
-        "discuss": "https://news.ycombinator.com/item?id=50097369",
-        "section": "main",
-        "norm_score": 0.152,
-        "raw_score": 212.0
-      }
-    },
-    {
-      "title": "Catch a Bird – I made it for my own sanity",
-      "url": "https://catchabird.com",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.125,
-      "desc": "",
-      "extra": {
-        "hn_id": 50053384,
-        "comments": 44,
-        "discuss": "https://news.ycombinator.com/item?id=50053384",
-        "section": "main",
-        "norm_score": 0.1255,
-        "raw_score": 176.0
-      }
-    },
-    {
-      "title": "Your C is not standard C",
-      "url": "https://sebsite.pw/w/20261012-notstdc.html",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.061,
-      "desc": "",
-      "extra": {
-        "hn_id": 50071546,
-        "comments": 55,
-        "discuss": "https://news.ycombinator.com/item?id=50071546",
-        "section": "main",
-        "norm_score": 0.0613,
-        "raw_score": 89.0
-      }
-    },
-    {
-      "title": "Wanted to download an ISO, ended up writing a kernel exploit",
-      "url": "https://blog.dfb.sh/blog/eap770-root-for-two-zeros/",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.058,
-      "desc": "Author here. Does anyone know what to do with the rest of the drivers? I found at least 13 in-tree drivers with the same bug class. The nasty part is they work fine on x86 and silently corrupt data on",
-      "extra": {
-        "hn_id": 50070625,
-        "comments": 31,
-        "discuss": "https://news.ycombinator.com/item?id=50070625",
-        "section": "main",
-        "norm_score": 0.0576,
-        "raw_score": 84.0
-      }
-    },
-    {
-      "title": "It took me nine years to hack my Xbox 360",
-      "url": "https://kennedn.com/blog/posts/glitching/",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.056,
-      "desc": "",
-      "extra": {
-        "hn_id": 50070661,
-        "comments": 22,
-        "discuss": "https://news.ycombinator.com/item?id=50070661",
-        "section": "main",
-        "norm_score": 0.0561,
-        "raw_score": 82.0
-      }
-    },
-    {
-      "title": "The Double Headed Stack Allocator",
-      "url": "https://blog.demofox.org/2026/10/03/the-double-headed-stack-allocator/",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.044,
-      "desc": "",
-      "extra": {
-        "hn_id": 50098274,
-        "comments": 18,
-        "discuss": "https://news.ycombinator.com/item?id=50098274",
-        "section": "main",
-        "norm_score": 0.0435,
-        "raw_score": 65.0
-      }
-    },
-    {
-      "title": "Donaldson Futuro House in Idyllwild, California, USA",
-      "url": "https://www.wowhaus.co.uk/2026/10/12/donaldson-futuro-house-in-idyllwild-california-usa/",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.029,
-      "desc": "",
-      "extra": {
-        "hn_id": 50077709,
-        "comments": 16,
-        "discuss": "https://news.ycombinator.com/item?id=50077709",
-        "section": "main",
-        "norm_score": 0.0288,
-        "raw_score": 45.0
-      }
-    },
-    {
-      "title": "AI was great until it was not",
-      "url": "https://thetheorygirlie.substack.com/p/ai-was-great-until-it-was-not",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.026,
-      "desc": "",
-      "extra": {
-        "hn_id": 50100791,
-        "comments": 26,
-        "discuss": "https://news.ycombinator.com/item?id=50100791",
-        "section": "main",
-        "norm_score": 0.0258,
-        "raw_score": 41.0
-      }
-    },
-    {
-      "title": "The Toftwood Male Voice Choir: A Mystery Pressed in Vinyl",
-      "url": "https://ei3lh.eu/2026/10/11/the-toftwood-male-voice-choir-a-mystery-pressed-in-vinyl/",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.024,
-      "desc": "",
-      "extra": {
-        "hn_id": 50047576,
-        "comments": 1,
-        "discuss": "https://news.ycombinator.com/item?id=50047576",
-        "section": "main",
-        "norm_score": 0.0244,
-        "raw_score": 39.0
-      }
-    },
-    {
-      "title": "Show HN: Flipflop, Iroh-powered persistent tunnels for filesharing",
-      "url": "https://github.com/andunieee/flipflop",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.024,
-      "desc": "This is a project that spun from my frustrations of using LocalSend and DashBeam to transfer stuff between devices, and with the extra goal of being fast, trying out the Slint framework and, most impo",
-      "extra": {
-        "hn_id": 50099136,
-        "comments": 11,
-        "discuss": "https://news.ycombinator.com/item?id=50099136",
-        "section": "main",
-        "norm_score": 0.0244,
-        "raw_score": 39.0
-      }
-    },
-    {
-      "title": "Creating a Garmin \"MCP\"",
-      "url": "https://jackantico.io/garmin-mcp",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.024,
-      "desc": "",
-      "extra": {
-        "hn_id": 50081045,
-        "comments": 37,
-        "discuss": "https://news.ycombinator.com/item?id=50081045",
-        "section": "main",
-        "norm_score": 0.0236,
-        "raw_score": 38.0
-      }
-    },
-    {
-      "title": "Sticky alpine flower confirms Darwin's 150-year-old carnivorous plant prediction",
-      "url": "https://phys.org/news/2026-08-sticky-alpine-darwin-year-carnivorous.html",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.017,
-      "desc": "",
-      "extra": {
-        "hn_id": 50060547,
-        "comments": 10,
-        "discuss": "https://news.ycombinator.com/item?id=50060547",
-        "section": "main",
-        "norm_score": 0.017,
-        "raw_score": 29.0
-      }
-    },
-    {
-      "title": "Show HN: Indigene – Native plants for where you stand",
-      "url": "https://indigene.app/",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.014,
-      "desc": "Back when I lived in Central Florida, it took me years to learn what native plants could benefit wildlife and the local ecosystem as I slowly replaced parts of my yard to make it more resilient to dro",
-      "extra": {
-        "hn_id": 50064470,
-        "comments": 5,
-        "discuss": "https://news.ycombinator.com/item?id=50064470",
-        "section": "main",
-        "norm_score": 0.014,
-        "raw_score": 25.0
-      }
-    },
-    {
-      "title": "David Rudnick on \"borderline impossible\" process of designing Arsenal typeface",
-      "url": "https://www.itsnicethat.com/features/david-rudnick-johnnie-campbell-arsenal-rocastle-typeface-graphic-design-spotlight-121026",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.013,
-      "desc": "",
-      "extra": {
-        "hn_id": 50060923,
-        "comments": 8,
-        "discuss": "https://news.ycombinator.com/item?id=50060923",
-        "section": "main",
-        "norm_score": 0.0125,
-        "raw_score": 23.0
-      }
-    },
-    {
-      "title": "The First Social Network: In rural Argentina residents send messages w AM radio",
-      "url": "https://www.newyorker.com/magazine/2026/10/19/the-first-social-network",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.007,
-      "desc": "",
-      "extra": {
-        "hn_id": 50079701,
-        "comments": 3,
-        "discuss": "https://news.ycombinator.com/item?id=50079701",
-        "section": "main",
-        "norm_score": 0.0066,
-        "raw_score": 15.0
-      }
-    },
-    {
-      "title": "Aidlc: Adaptive workflow steering rules for AI coding agents",
-      "url": "https://github.com/awslabs/aidlc-workflows",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.001,
-      "desc": "",
-      "extra": {
-        "hn_id": 50100387,
-        "comments": 8,
-        "discuss": "https://news.ycombinator.com/item?id=50100387",
-        "section": "main",
-        "norm_score": 0.0007,
-        "raw_score": 7.0
+        "norm_score": 0.006,
+        "raw_score": 31045.86
       }
     }
   ]
