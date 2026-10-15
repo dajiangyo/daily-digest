@@ -1,9 +1,9 @@
 {
   "date": "2026-10-15",
-  "generated_at": "2026-10-15T15:50:57.150044+08:00",
+  "generated_at": "2026-10-15T16:15:12.202428+08:00",
   "count": 24,
   "errors": [],
-  "summary": "# 每日速览 2026-10-15\n\n共 24 个条目，来自 4 个源。\n\n## 值得关注\n\n- **debpalash/VoiceStudio** — GitHub Trending · 全语言\n  VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & \n  [打开原文](https://github.com/debpalash/VoiceStudio)\n- **Alishahryar1/free-claude-code** — GitHub Trending · Python\n  Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone\n  [打开原文](https://github.com/Alishahryar1/free-claude-code)\n- **Things to know when you get cancer** — Hacker News\n  [打开原文](https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/)\n- **morluto/rea** — GitHub Trending · TypeScript\n  Reverse engineer anything with agents, from app behavior down to native binaries.\n  [打开原文](https://github.com/morluto/rea)\n- **ifixai-ai/iFixAi** — GitHub Trending · 全语言\n  Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the age\n  [打开原文](https://github.com/ifixai-ai/iFixAi)\n\n## 分栏速览\n\n- **综合排行**（24 条）：debpalash/VoiceStudio、Alishahryar1/free-claude-code、Things to know when you get cancer、morluto/rea、ifixai-ai/iFixAi、MakazhanAlpamys/Soup、Containment and monitoring failures are to blame for AI hacking reports: experts、heygen-com/hyperframes\n\n## 分类速览\n\n- **GitHub Trending · 全语言**（6 条）：debpalash/VoiceStudio、ifixai-ai/iFixAi、xtool-org/xtool、vxcontrol/pentagi、NationalSecurityAgency/ghidra、mksglu/context-mode\n- **GitHub Trending · Python**（6 条）：Alishahryar1/free-claude-code、MakazhanAlpamys/Soup、anthropics/claude-plugins-official、p-e-w/heretic、home-assistant/core、python/cpython\n- **Hacker News**（6 条）：Things to know when you get cancer、Containment and monitoring failures are to blame for AI hacking reports: experts、How Amazon pushes up prices all across the Internet、Do dentists know what they're doing?、OpenCode 2.0、Americans' social activity has steeply declined in the past 30 years\n- **GitHub Trending · TypeScript**（6 条）：morluto/rea、heygen-com/hyperframes、stablyai/orca、vercel-labs/skills、anomalyco/opencode、OpenCut-app/OpenCut\n\n## 一句话提醒\n\n当前为无 AI 模式（未配置 LLM_API_KEY），以上内容由模板生成。",
+  "summary": "今天整体风向是 Agent 能力正从辅助编码下沉到逆向工程、安全审计与渗透测试等硬核领域，同时本地化语音、跨平台构建等“去云化、轻量化”工具迎来爆发式关注。\n\n## 值得关注\n\n**1. morluto/rea（今日 +41034 star，总计 253343 star，TypeScript）**\n它是什么：一个宣称“用 Agent 逆向一切”的工具，从应用行为分析到原生二进制逆向都能覆盖。\n为什么今天值得看：单日暴涨 4.1 万 star 断层领先，说明市场对“Agent 驱动逆向”需求极度饥渴，值得验证其实际逆向深度与稳定性。\n\n**2. debpalash/VoiceStudio（今日 +3538 star，总计 67399 star，Python）**\n它是什么：开源、完全本地运行的 ElevenLabs 平替，支持声音克隆、声音设计、视频配音、听写转录与有声书制作，覆盖 646 种语言。\n为什么今天值得看：单日新增 3538 star，在云端语音服务成本与隐私顾虑下，本地化全功能方案正成为刚需。\n\n**3. ifixai-ai/iFixAi（今日 +2109 star，总计 27921 star，Python）**\n它是什么：面向 AI Agent 经济的独立审计工具，可由人或 Agent 自身运行，回答“Agent 是否在按预期做事”。\n为什么今天值得看：与 Hacker News 上 519 评论热议的《AI hacking 并非失控而是监控缺位》直接呼应，Agent 审计从概念进入工具化阶段。\n\n**4. xtool-org/xtool（今日 +1502 star，总计 11248 star，Swift）**\n它是什么：跨平台 Xcode 替代品，基于 SwiftPM 在 Linux、Windows、macOS 上构建和部署 iOS 应用。\n为什么今天值得看：单日 +1502 star，解决了非 macOS 环境无法构建 iOS 的长期痛点，对跨平台团队意义重大。\n\n## 综合排行\n\n1. Alishahryar1/free-claude-code（今日 +540 star，总计 60619 star，Python）— 免费调用 Claude Code/Codex 等 9 种 harness，支持终端/IDE/手机/浏览器\n2. debpalash/VoiceStudio（今日 +3538 star，总计 67399 star，Python）— 本地化 ElevenLabs 平替\n3. Things to know when you get cancer（Hacker News，318 评论）\n4. morluto/rea（今日 +41034 star，总计 253343 star，TypeScript）— Agent 驱动逆向工程\n5. MakazhanAlpamys/Soup（今日 +247 star，总计 9065 star，Python）— 单 YAML 微调 LLM，4GB 显存可训 8B 模型\n6. ifixai-ai/iFixAi（今日 +2109 star，总计 27921 star，Python）— AI Agent 独立审计\n7. Containment and monitoring failures are to blame for AI hacking reports: experts（Hacker News，519 评论）\n8. heygen-com/hyperframes（今日 +1089 star，总计 63975 star，TypeScript）— 写 HTML 直接渲染视频，面向 Agent 设计\n9. anthropics/claude-plugins-official（今日 +181 star，总计 38170 star，Python）— Anthropic 官方 Claude Code 插件目录\n10. xtool-org/xtool（今日 +1502 star，总计 11248 star，Swift）— 跨平台 Xcode 替代\n11. Do dentists know what they're doing?（Hacker News，469 评论）\n12. mksglu/context-mode（今日 +947 star，总计 29445 star，TypeScript）— AI 编码 Agent 上下文优化，工具输出压缩 98%\n13. p-e-w/heretic（今日 +181 star，总计 35327 star，Python）— 语言模型自动去审查\n14. vxcontrol/pentagi（今日 +1025 star，总计 30028 star，Go）— 全自主渗透测试 Agent 系统\n15. OpenCode 2.0（Hacker News，218 评论）\n16. stablyai/orca（今日 +919 star，总计 92823 star，TypeScript）— 并行 Agent 舰队的 ADE，支持自带订阅\n17. home-assistant/core（今日 +145 star，总计 91514 star，Python）— 本地优先的开源智能家居\n18. NationalSecurityAgency/ghidra（今日 +1008 star，总计 87938 star，Java）— NSA 开源逆向框架\n19. Tiny Little Office（Hacker News，57 评论）\n20. vercel-labs/skills（今日 +658 star，总计 35008 star，TypeScript）— 开放式 Agent skills 工具 npx skills\n21. python/cpython（今日 +130 star，总计 77558 star，Python）— Python 语言本体\n22. rust-lang/rust（今日 +207 star，总计 120201 star，Rust）— Rust 语言本体\n23. Americans' social activity has steeply declined in the past 30 years（Hacker News，353 评论）\n24. anomalyco/opencode（今日 +320 star，总计 213623 star，TypeScript）— 开源编码 Agent\n\n## 分类速览\n\n- **Agent 编码与上下文生态**：免费多 harness 调用、上下文压缩与会话记忆、并行运行时及插件/skills 生态共 7 项，聚焦降低 Agent 使用成本与上下文损耗\n- **模型训练与定制**：单 YAML 流式微调与模型去审查工具，强调低资源本地可训与可控性\n- **安全与逆向**：自主渗透测试系统与老牌逆向框架，Agent 正接管传统安全攻防流程\n- **音视频与前端生成**：HTML 转视频等面向 Agent 的媒体生成工具\n- **基础设施与语言**：智能家居核心及 Python/Rust 语言本体，关注本地化与可靠性\n- **Hacker News 热议**：癌症应对、AI 安全监控缺位、牙医争议、办公与社会活动变迁等 6 篇高评论内容，反映对 AI 风险与社会议题的焦虑\n\n## 一句话提醒\n\n今天最该注意：逆向与渗透类 Agent 暴涨的同时，HN 专家已点明“失控多因监控与隔离缺位”，追新前先把审计（iFixAi 类）与沙箱补齐。",
   "sections": [
     {
       "id": "main",
@@ -13,22 +13,6 @@
   ],
   "items": [
     {
-      "title": "debpalash/VoiceStudio",
-      "url": "https://github.com/debpalash/VoiceStudio",
-      "source": "GitHub Trending · 全语言",
-      "section": "main",
-      "score": 1.0,
-      "desc": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
-      "extra": {
-        "stars_today": 3538,
-        "stars_total": 67336,
-        "language": "Python",
-        "section": "main",
-        "norm_score": 1.0,
-        "raw_score": 354473.36
-      }
-    },
-    {
       "title": "Alishahryar1/free-claude-code",
       "url": "https://github.com/Alishahryar1/free-claude-code",
       "source": "GitHub Trending · Python",
@@ -37,11 +21,27 @@
       "desc": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
       "extra": {
         "stars_today": 540,
-        "stars_total": 60615,
+        "stars_total": 60619,
         "language": "Python",
         "section": "main",
         "norm_score": 1.0,
-        "raw_score": 54606.15
+        "raw_score": 54606.19
+      }
+    },
+    {
+      "title": "debpalash/VoiceStudio",
+      "url": "https://github.com/debpalash/VoiceStudio",
+      "source": "GitHub Trending · 全语言",
+      "section": "main",
+      "score": 1.0,
+      "desc": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
+      "extra": {
+        "stars_today": 3538,
+        "stars_total": 67399,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 1.0,
+        "raw_score": 354473.99
       }
     },
     {
@@ -53,11 +53,11 @@
       "desc": "",
       "extra": {
         "hn_id": 50093568,
-        "comments": 313,
+        "comments": 318,
         "discuss": "https://news.ycombinator.com/item?id=50093568",
         "section": "main",
         "norm_score": 1.0,
-        "raw_score": 1239.0
+        "raw_score": 1266.0
       }
     },
     {
@@ -69,11 +69,27 @@
       "desc": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "extra": {
         "stars_today": 41034,
-        "stars_total": 252722,
+        "stars_total": 253343,
         "language": "TypeScript",
         "section": "main",
         "norm_score": 1.0,
-        "raw_score": 4105927.22
+        "raw_score": 4105933.43
+      }
+    },
+    {
+      "title": "MakazhanAlpamys/Soup",
+      "url": "https://github.com/MakazhanAlpamys/Soup",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.437,
+      "desc": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.",
+      "extra": {
+        "stars_today": 247,
+        "stars_total": 9065,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.4372,
+        "raw_score": 24790.65
       }
     },
     {
@@ -85,27 +101,11 @@
       "desc": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
       "extra": {
         "stars_today": 2109,
-        "stars_total": 27899,
+        "stars_total": 27921,
         "language": "Python",
         "section": "main",
         "norm_score": 0.5886,
-        "raw_score": 211178.99
-      }
-    },
-    {
-      "title": "MakazhanAlpamys/Soup",
-      "url": "https://github.com/MakazhanAlpamys/Soup",
-      "source": "GitHub Trending · Python",
-      "section": "main",
-      "score": 0.438,
-      "desc": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.",
-      "extra": {
-        "stars_today": 247,
-        "stars_total": 9064,
-        "language": "Python",
-        "section": "main",
-        "norm_score": 0.4383,
-        "raw_score": 24790.64
+        "raw_score": 211179.21
       }
     },
     {
@@ -113,15 +113,15 @@
       "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
       "source": "Hacker News",
       "section": "main",
-      "score": 0.712,
+      "score": 0.701,
       "desc": "",
       "extra": {
         "hn_id": 50091788,
-        "comments": 517,
+        "comments": 519,
         "discuss": "https://news.ycombinator.com/item?id=50091788",
         "section": "main",
-        "norm_score": 0.7123,
-        "raw_score": 884.0
+        "norm_score": 0.7013,
+        "raw_score": 889.0
       }
     },
     {
@@ -133,11 +133,27 @@
       "desc": "Write HTML. Render video. Built for agents.",
       "extra": {
         "stars_today": 1089,
-        "stars_total": 63959,
+        "stars_total": 63975,
         "language": "TypeScript",
         "section": "main",
         "norm_score": 0.0252,
-        "raw_score": 109539.59
+        "raw_score": 109539.75
+      }
+    },
+    {
+      "title": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.318,
+      "desc": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "extra": {
+        "stars_today": 181,
+        "stars_total": 38170,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.3181,
+        "raw_score": 18481.7
       }
     },
     {
@@ -149,91 +165,11 @@
       "desc": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
       "extra": {
         "stars_today": 1502,
-        "stars_total": 11231,
+        "stars_total": 11248,
         "language": "Swift",
         "section": "main",
         "norm_score": 0.4139,
-        "raw_score": 150312.31
-      }
-    },
-    {
-      "title": "anthropics/claude-plugins-official",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "source": "GitHub Trending · Python",
-      "section": "main",
-      "score": 0.319,
-      "desc": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "extra": {
-        "stars_today": 181,
-        "stars_total": 38164,
-        "language": "Python",
-        "section": "main",
-        "norm_score": 0.3195,
-        "raw_score": 18481.64
-      }
-    },
-    {
-      "title": "How Amazon pushes up prices all across the Internet",
-      "url": "https://www.not-ship.com/how-amazon-pushes-up-prices-all-across-the-internet/",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.647,
-      "desc": "",
-      "extra": {
-        "hn_id": 50084757,
-        "comments": 630,
-        "discuss": "https://news.ycombinator.com/item?id=50084757",
-        "section": "main",
-        "norm_score": 0.6475,
-        "raw_score": 804.0
-      }
-    },
-    {
-      "title": "stablyai/orca",
-      "url": "https://github.com/stablyai/orca",
-      "source": "GitHub Trending · TypeScript",
-      "section": "main",
-      "score": 0.021,
-      "desc": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-      "extra": {
-        "stars_today": 919,
-        "stars_total": 92803,
-        "language": "TypeScript",
-        "section": "main",
-        "norm_score": 0.0211,
-        "raw_score": 92828.03
-      }
-    },
-    {
-      "title": "vxcontrol/pentagi",
-      "url": "https://github.com/vxcontrol/pentagi",
-      "source": "GitHub Trending · 全语言",
-      "section": "main",
-      "score": 0.277,
-      "desc": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
-      "extra": {
-        "stars_today": 1025,
-        "stars_total": 29997,
-        "language": "Go",
-        "section": "main",
-        "norm_score": 0.2775,
-        "raw_score": 102799.97
-      }
-    },
-    {
-      "title": "p-e-w/heretic",
-      "url": "https://github.com/p-e-w/heretic",
-      "source": "GitHub Trending · Python",
-      "section": "main",
-      "score": 0.319,
-      "desc": "Fully automatic censorship removal for language models",
-      "extra": {
-        "stars_today": 181,
-        "stars_total": 35322,
-        "language": "Python",
-        "section": "main",
-        "norm_score": 0.3189,
-        "raw_score": 18453.22
+        "raw_score": 150312.48
       }
     },
     {
@@ -245,27 +181,107 @@
       "desc": "",
       "extra": {
         "hn_id": 50050553,
-        "comments": 449,
+        "comments": 469,
         "discuss": "https://news.ycombinator.com/item?id=50050553",
         "section": "main",
-        "norm_score": 0.5154,
-        "raw_score": 641.0
+        "norm_score": 0.5151,
+        "raw_score": 654.0
       }
     },
     {
-      "title": "vercel-labs/skills",
-      "url": "https://github.com/vercel-labs/skills",
+      "title": "mksglu/context-mode",
+      "url": "https://github.com/mksglu/context-mode",
       "source": "GitHub Trending · TypeScript",
       "section": "main",
-      "score": 0.015,
-      "desc": "The open agent skills tool - npx skills",
+      "score": 0.022,
+      "desc": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "extra": {
-        "stars_today": 658,
-        "stars_total": 35000,
+        "stars_today": 947,
+        "stars_total": 29445,
         "language": "TypeScript",
         "section": "main",
-        "norm_score": 0.0146,
-        "raw_score": 66150.0
+        "norm_score": 0.0216,
+        "raw_score": 94994.45
+      }
+    },
+    {
+      "title": "p-e-w/heretic",
+      "url": "https://github.com/p-e-w/heretic",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.318,
+      "desc": "Fully automatic censorship removal for language models",
+      "extra": {
+        "stars_today": 181,
+        "stars_total": 35327,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.3176,
+        "raw_score": 18453.27
+      }
+    },
+    {
+      "title": "vxcontrol/pentagi",
+      "url": "https://github.com/vxcontrol/pentagi",
+      "source": "GitHub Trending · 全语言",
+      "section": "main",
+      "score": 0.277,
+      "desc": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
+      "extra": {
+        "stars_today": 1025,
+        "stars_total": 30028,
+        "language": "Go",
+        "section": "main",
+        "norm_score": 0.2775,
+        "raw_score": 102800.28
+      }
+    },
+    {
+      "title": "OpenCode 2.0",
+      "url": "https://anoma.ly/notes/opencode-2-0/",
+      "source": "Hacker News",
+      "section": "main",
+      "score": 0.448,
+      "desc": "",
+      "extra": {
+        "hn_id": 50094994,
+        "comments": 218,
+        "discuss": "https://news.ycombinator.com/item?id=50094994",
+        "section": "main",
+        "norm_score": 0.4477,
+        "raw_score": 569.0
+      }
+    },
+    {
+      "title": "stablyai/orca",
+      "url": "https://github.com/stablyai/orca",
+      "source": "GitHub Trending · TypeScript",
+      "section": "main",
+      "score": 0.021,
+      "desc": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
+      "extra": {
+        "stars_today": 919,
+        "stars_total": 92823,
+        "language": "TypeScript",
+        "section": "main",
+        "norm_score": 0.0211,
+        "raw_score": 92828.23
+      }
+    },
+    {
+      "title": "home-assistant/core",
+      "url": "https://github.com/home-assistant/core",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.26,
+      "desc": "🏡 Open source home automation that puts local control and privacy first.",
+      "extra": {
+        "stars_today": 145,
+        "stars_total": 91514,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.2602,
+        "raw_score": 15415.14
       }
     },
     {
@@ -277,43 +293,91 @@
       "desc": "Ghidra is a software reverse engineering (SRE) framework",
       "extra": {
         "stars_today": 1008,
-        "stars_total": 87919,
+        "stars_total": 87938,
         "language": "Java",
         "section": "main",
         "norm_score": 0.2742,
-        "raw_score": 101679.19
+        "raw_score": 101679.38
       }
     },
     {
-      "title": "home-assistant/core",
-      "url": "https://github.com/home-assistant/core",
-      "source": "GitHub Trending · Python",
-      "section": "main",
-      "score": 0.262,
-      "desc": "🏡 Open source home automation that puts local control and privacy first.",
-      "extra": {
-        "stars_today": 145,
-        "stars_total": 91514,
-        "language": "Python",
-        "section": "main",
-        "norm_score": 0.2617,
-        "raw_score": 15415.14
-      }
-    },
-    {
-      "title": "OpenCode 2.0",
-      "url": "https://anoma.ly/notes/opencode-2-0/",
+      "title": "Tiny Little Office",
+      "url": "https://tinylittleoffice.com/",
       "source": "Hacker News",
       "section": "main",
-      "score": 0.44,
+      "score": 0.304,
       "desc": "",
       "extra": {
-        "hn_id": 50094994,
-        "comments": 213,
-        "discuss": "https://news.ycombinator.com/item?id=50094994",
+        "hn_id": 50096142,
+        "comments": 57,
+        "discuss": "https://news.ycombinator.com/item?id=50096142",
         "section": "main",
-        "norm_score": 0.44,
-        "raw_score": 548.0
+        "norm_score": 0.3043,
+        "raw_score": 388.0
+      }
+    },
+    {
+      "title": "vercel-labs/skills",
+      "url": "https://github.com/vercel-labs/skills",
+      "source": "GitHub Trending · TypeScript",
+      "section": "main",
+      "score": 0.015,
+      "desc": "The open agent skills tool - npx skills",
+      "extra": {
+        "stars_today": 658,
+        "stars_total": 35008,
+        "language": "TypeScript",
+        "section": "main",
+        "norm_score": 0.0146,
+        "raw_score": 66150.08
+      }
+    },
+    {
+      "title": "python/cpython",
+      "url": "https://github.com/python/cpython",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.229,
+      "desc": "The Python programming language",
+      "extra": {
+        "stars_today": 130,
+        "stars_total": 77558,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.2293,
+        "raw_score": 13775.58
+      }
+    },
+    {
+      "title": "rust-lang/rust",
+      "url": "https://github.com/rust-lang/rust",
+      "source": "GitHub Trending · 全语言",
+      "section": "main",
+      "score": 0.045,
+      "desc": "Empowering everyone to build reliable and efficient software.",
+      "extra": {
+        "stars_today": 207,
+        "stars_total": 120201,
+        "language": "Rust",
+        "section": "main",
+        "norm_score": 0.0452,
+        "raw_score": 21902.01
+      }
+    },
+    {
+      "title": "Americans' social activity has steeply declined in the past 30 years",
+      "url": "https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-steeply-declined-in-the-past-30-years",
+      "source": "Hacker News",
+      "section": "main",
+      "score": 0.298,
+      "desc": "",
+      "extra": {
+        "hn_id": 50089921,
+        "comments": 353,
+        "discuss": "https://news.ycombinator.com/item?id=50089921",
+        "section": "main",
+        "norm_score": 0.2979,
+        "raw_score": 380.0
       }
     },
     {
@@ -325,75 +389,11 @@
       "desc": "The open source coding agent.",
       "extra": {
         "stars_today": 320,
-        "stars_total": 213611,
+        "stars_total": 213623,
         "language": "TypeScript",
         "section": "main",
         "norm_score": 0.0068,
-        "raw_score": 34136.11
-      }
-    },
-    {
-      "title": "mksglu/context-mode",
-      "url": "https://github.com/mksglu/context-mode",
-      "source": "GitHub Trending · 全语言",
-      "section": "main",
-      "score": 0.255,
-      "desc": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
-      "extra": {
-        "stars_today": 947,
-        "stars_total": 29423,
-        "language": "TypeScript",
-        "section": "main",
-        "norm_score": 0.2551,
-        "raw_score": 94994.23
-      }
-    },
-    {
-      "title": "python/cpython",
-      "url": "https://github.com/python/cpython",
-      "source": "GitHub Trending · Python",
-      "section": "main",
-      "score": 0.231,
-      "desc": "The Python programming language",
-      "extra": {
-        "stars_today": 130,
-        "stars_total": 77557,
-        "language": "Python",
-        "section": "main",
-        "norm_score": 0.2308,
-        "raw_score": 13775.57
-      }
-    },
-    {
-      "title": "Americans' social activity has steeply declined in the past 30 years",
-      "url": "https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-steeply-declined-in-the-past-30-years",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.297,
-      "desc": "",
-      "extra": {
-        "hn_id": 50089921,
-        "comments": 347,
-        "discuss": "https://news.ycombinator.com/item?id=50089921",
-        "section": "main",
-        "norm_score": 0.2966,
-        "raw_score": 371.0
-      }
-    },
-    {
-      "title": "OpenCut-app/OpenCut",
-      "url": "https://github.com/OpenCut-app/OpenCut",
-      "source": "GitHub Trending · TypeScript",
-      "section": "main",
-      "score": 0.006,
-      "desc": "The open-source CapCut alternative",
-      "extra": {
-        "stars_today": 301,
-        "stars_total": 94545,
-        "language": "TypeScript",
-        "section": "main",
-        "norm_score": 0.006,
-        "raw_score": 31045.45
+        "raw_score": 34136.23
       }
     }
   ]

@@ -244,6 +244,8 @@ def main() -> int:
             api_key=os.environ.get("LLM_API_KEY"),
             model=llm_cfg.get("model"),
             temperature=float(llm_cfg.get("temperature", 0.3)),
+            max_tokens=int(llm_cfg.get("max_tokens", 8000)),
+            timeout=int(llm_cfg.get("timeout", 300)),
             sections=sections,
         )
 

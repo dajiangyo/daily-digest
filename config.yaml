@@ -135,9 +135,24 @@ rank:
 # --------------------------------------------------------------------------- #
 # base_url / api_key 走环境变量 LLM_BASE_URL / LLM_API_KEY（Actions 里放 secrets）
 # 不配置也能跑，会降级为模板摘要。
+#
+# 注意：不要把密钥写在这个文件里——它是公开仓库，提交上去等于公开泄露。
 llm:
-  model: deepseek-chat      # deepseek-chat / gpt-4o-mini / moonshot-v1-8k / qwen-plus ...
+  model: claude-sonnet-5    # 见下方「怎么知道有哪些模型可选」
   temperature: 0.3
+  max_tokens: 8000          # 推理模型会把思考也算进 completion_tokens，
+                            # 给小了会出现「200 OK 但 content 为空」，别调太低
+  timeout: 300              # 推理模型响应慢，实测 25-60 秒
+
+# 怎么知道有哪些模型可选：浏览器打开 <base_url>/models，带上 Authorization
+# 头就能拿到列表。当前配置的接口实测可用这 13 个（都是推理模型）：
+#   claude-opus-5 / claude-opus-5.5 / claude-opus-5-5
+#   claude-opus-4.8 / claude-opus-4-8 / claude-opus-4.7 / claude-opus-4-7
+#   claude-opus-4.6 / claude-opus-4-6
+#   claude-sonnet-5
+#   claude-fable-5 / claude-fable-5.1 / claude-fable-5-1
+# 实测三者耗时：claude-sonnet-5 约 26 秒，claude-fable-5 约 53 秒，
+# claude-opus-5 约 58 秒。晨报这种活 sonnet 够用且快一倍。
 
 # --------------------------------------------------------------------------- #
 # 输出
