@@ -9,6 +9,10 @@ from typing import Dict, List, Optional
 
 from sources import Item
 
+# 渲染层自己会输出的固定标题。AI 摘要里若出现同名小节会被丢弃，
+# 避免页面上出现两个「AI 速览」。
+RESERVED_HEADINGS = {"AI 速览", "抓取异常"}
+
 
 def _fmt_metrics(it: Item) -> str:
     extra = it.extra or {}
@@ -34,6 +38,47 @@ def _fmt_metrics(it: Item) -> str:
     return " · ".join(parts)
 
 
+def _strip_section_headings(summary: str, sections: List[tuple]) -> str:
+    """去掉 AI 摘要里与渲染层自带标题重名的小节。
+
+    需要处理两类重名，处理力度不同：
+
+    1) 与榜单名重名（如「综合排行」）——整段丢弃（标题行 + 它的正文）。
+       提示词要求模型用「### 榜单观察 · <榜单名>」写观察、不要复述榜单，但模型
+       不一定每次都听话。重名小节有两重问题：页面上会出现两个「综合排行」，
+       而且正文通常就是对下方表格的逐条复述。
+    2) 与渲染层固定标题重名（如「AI 速览」）——只丢标题行，保留正文。
+       模型爱在正文开头自己加一个总标题，而外面已经有一层了；但紧跟其后的
+       那句风向概述是真内容，必须留下。
+    """
+    titles = {str(t).strip() for _sid, t, _g in sections}
+    kept: List[str] = []
+    skip_level: Optional[int] = None  # 非 None 表示正在丢弃该层级的小节
+
+    for line in summary.splitlines():
+        m = re.match(r"^(#{1,6})\s+(.*?)\s*#*\s*$", line)
+        if m:
+            level = len(m.group(1))
+            heading = m.group(2).strip()
+            # 遇到同级或更高级标题，说明被丢弃的小节结束了
+            if skip_level is not None and level <= skip_level:
+                skip_level = None
+            if skip_level is None:
+                if heading in titles:
+                    # 榜单重名：整段丢，从标题行开始
+                    skip_level = level
+                    continue
+                if heading in RESERVED_HEADINGS:
+                    # 固定标题重名：只丢这一行，正文保留
+                    continue
+        if skip_level is not None:
+            continue  # 丢弃该小节正文
+        kept.append(line)
+
+    # 丢掉整段后可能留下多余空行，压一下
+    return re.sub(r"\n{3,}", "\n\n", "\n".join(kept)).strip()
+
+
 def render_markdown(
     *,
     date: str,
@@ -44,6 +89,11 @@ def render_markdown(
     generated_at: Optional[datetime] = None,
 ) -> str:
     generated_at = generated_at or datetime.now()
+
+    # sections 是 [(id, title, [Item...]), ...]；不传时退化成单栏，兼容旧调用
+    if not sections:
+        sections = [("main", "完整排行", items)]
+
     out: List[str] = []
 
     out.append(f"# 每日排行与 AI 速览 · {date}")
@@ -53,12 +103,8 @@ def render_markdown(
 
     out.append("## AI 速览")
     out.append("")
-    out.append(summary.strip())
+    out.append(_strip_section_headings(summary, sections))
     out.append("")
-
-    # sections 是 [(id, title, [Item...]), ...]；不传时退化成单栏，兼容旧调用
-    if not sections:
-        sections = [("main", "完整排行", items)]
 
     for sid, title, group in sections:
         out.append(f"## {title}")
@@ -287,7 +333,7 @@ def render_html(
         date=html.escape(date),
         count=len(items),
         generated_at=f"{generated_at:%Y-%m-%d %H:%M:%S}",
-        summary_html=md_to_html_fragment(summary),
+        summary_html=md_to_html_fragment(_strip_section_headings(summary, sections)),
         rows="\n".join(blocks),
         errors_html=errors_html,
     )
