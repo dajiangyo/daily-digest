@@ -1,38 +1,17 @@
 {
   "date": "2026-10-15",
-  "generated_at": "2026-10-15T14:26:51.509184+08:00",
-  "count": 39,
+  "generated_at": "2026-10-15T15:20:10.958930+08:00",
+  "count": 24,
   "errors": [],
-  "summary": "# 每日速览 2026-10-15\n\n共 39 个条目，来自 7 个源。\n\n## 值得关注\n\n- **Alishahryar1/free-claude-code** — GitHub Trending · Python\n  Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone\n  [打开原文](https://github.com/Alishahryar1/free-claude-code)\n- **debpalash/VoiceStudio** — GitHub Trending · 全语言\n  VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & \n  [打开原文](https://github.com/debpalash/VoiceStudio)\n- **Things to know when you get cancer** — Hacker News\n  [打开原文](https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/)\n- **morluto/rea** — GitHub Trending · TypeScript\n  Reverse engineer anything with agents, from app behavior down to native binaries.\n  [打开原文](https://github.com/morluto/rea)\n- **MakazhanAlpamys/Soup** — GitHub Trending · Python\n  Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.\n  [打开原文](https://github.com/MakazhanAlpamys/Soup)\n\n## 分栏速览\n\n- **综合排行**（24 条）：Alishahryar1/free-claude-code、debpalash/VoiceStudio、Things to know when you get cancer、morluto/rea、MakazhanAlpamys/Soup、ifixai-ai/iFixAi、Containment and monitoring failures are to blame for AI hacking reports: experts、heygen-com/hyperframes\n- **恋活插件排行**（15 条）：ManlyMarco/KK-HF_Patch、IllusionMods/KKManager、IllusionMods/KK_Plugins、IllusionMods/BepisPlugins、IllusionMods/IllusionModdingAPI、Sauceke/LoveMachine、ManlyMarco/KKS-HF_Patch、IllusionMods/IllusionFixes\n\n## 分类速览\n\n- **GitHub Trending · Python**（6 条）：Alishahryar1/free-claude-code、MakazhanAlpamys/Soup、anthropics/claude-plugins-official、p-e-w/heretic、home-assistant/core、python/cpython\n- **GitHub Trending · 全语言**（6 条）：debpalash/VoiceStudio、ifixai-ai/iFixAi、xtool-org/xtool、vxcontrol/pentagi、NationalSecurityAgency/ghidra、mksglu/context-mode\n- **Hacker News**（6 条）：Things to know when you get cancer、Containment and monitoring failures are to blame for AI hacking reports: experts、How Amazon pushes up prices all across the Internet、Do dentists know what they're doing?、OpenCode 2.0、Americans' social activity has steeply declined in the past 30 years\n- **GitHub Trending · TypeScript**（6 条）：morluto/rea、heygen-com/hyperframes、stablyai/orca、vercel-labs/skills、anomalyco/opencode、OpenCut-app/OpenCut\n- **恋活插件 · 标签**（12 条）：ManlyMarco/KK-HF_Patch、IllusionMods/KKManager、IllusionMods/KK_Plugins、IllusionMods/BepisPlugins、IllusionMods/IllusionModdingAPI、Sauceke/LoveMachine、IllusionMods/IllusionFixes、ManlyMarco/IllusionCheatTools\n- **恋活插件 · 关键词**（2 条）：ManlyMarco/KKS-HF_Patch、IllusionMods/KoikatsuModdingTools\n- **恋活插件 · 官方组织**（1 条）：IllusionMods/HSPlugins\n\n## 一句话提醒\n\n当前为无 AI 模式（未配置 LLM_API_KEY），以上内容由模板生成。",
+  "summary": "# 每日速览 2026-10-15\n\n共 24 个条目，来自 4 个源。\n\n## 值得关注\n\n- **debpalash/VoiceStudio** — GitHub Trending · 全语言\n  VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & \n  [打开原文](https://github.com/debpalash/VoiceStudio)\n- **Alishahryar1/free-claude-code** — GitHub Trending · Python\n  Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone\n  [打开原文](https://github.com/Alishahryar1/free-claude-code)\n- **Things to know when you get cancer** — Hacker News\n  [打开原文](https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/)\n- **morluto/rea** — GitHub Trending · TypeScript\n  Reverse engineer anything with agents, from app behavior down to native binaries.\n  [打开原文](https://github.com/morluto/rea)\n- **ifixai-ai/iFixAi** — GitHub Trending · 全语言\n  Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the age\n  [打开原文](https://github.com/ifixai-ai/iFixAi)\n\n## 分栏速览\n\n- **综合排行**（24 条）：debpalash/VoiceStudio、Alishahryar1/free-claude-code、Things to know when you get cancer、morluto/rea、ifixai-ai/iFixAi、MakazhanAlpamys/Soup、Containment and monitoring failures are to blame for AI hacking reports: experts、heygen-com/hyperframes\n\n## 分类速览\n\n- **GitHub Trending · 全语言**（6 条）：debpalash/VoiceStudio、ifixai-ai/iFixAi、xtool-org/xtool、vxcontrol/pentagi、NationalSecurityAgency/ghidra、mksglu/context-mode\n- **GitHub Trending · Python**（6 条）：Alishahryar1/free-claude-code、MakazhanAlpamys/Soup、anthropics/claude-plugins-official、p-e-w/heretic、K-Dense-AI/scientific-agent-skills、home-assistant/core\n- **Hacker News**（6 条）：Things to know when you get cancer、Containment and monitoring failures are to blame for AI hacking reports: experts、How Amazon pushes up prices all across the Internet、Do dentists know what they're doing?、OpenCode 2.0、Americans' social activity has steeply declined in the past 30 years\n- **GitHub Trending · TypeScript**（6 条）：morluto/rea、heygen-com/hyperframes、stablyai/orca、vercel-labs/skills、anomalyco/opencode、OpenCut-app/OpenCut\n\n## 一句话提醒\n\n当前为无 AI 模式（未配置 LLM_API_KEY），以上内容由模板生成。",
   "sections": [
     {
       "id": "main",
       "title": "综合排行",
       "count": 24
-    },
-    {
-      "id": "koikatsu",
-      "title": "恋活插件排行",
-      "count": 15
     }
   ],
   "items": [
-    {
-      "title": "Alishahryar1/free-claude-code",
-      "url": "https://github.com/Alishahryar1/free-claude-code",
-      "source": "GitHub Trending · Python",
-      "section": "main",
-      "score": 1.0,
-      "desc": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
-      "extra": {
-        "stars_today": 540,
-        "stars_total": 60605,
-        "language": "Python",
-        "section": "main",
-        "norm_score": 1.0,
-        "raw_score": 54606.05
-      }
-    },
     {
       "title": "debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
@@ -42,11 +21,27 @@
       "desc": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "extra": {
         "stars_today": 3538,
-        "stars_total": 67122,
+        "stars_total": 67237,
         "language": "Python",
         "section": "main",
         "norm_score": 1.0,
-        "raw_score": 354471.22
+        "raw_score": 354472.37
+      }
+    },
+    {
+      "title": "Alishahryar1/free-claude-code",
+      "url": "https://github.com/Alishahryar1/free-claude-code",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 1.0,
+      "desc": "Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native browser sessions (multi-harness + multi-model) like OpenClaw (voice supported + ToS friendly)",
+      "extra": {
+        "stars_today": 540,
+        "stars_total": 60607,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 1.0,
+        "raw_score": 54606.07
       }
     },
     {
@@ -58,11 +53,11 @@
       "desc": "",
       "extra": {
         "hn_id": 50093568,
-        "comments": 285,
+        "comments": 301,
         "discuss": "https://news.ycombinator.com/item?id=50093568",
         "section": "main",
         "norm_score": 1.0,
-        "raw_score": 1127.0
+        "raw_score": 1199.0
       }
     },
     {
@@ -74,27 +69,11 @@
       "desc": "Reverse engineer anything with agents, from app behavior down to native binaries.",
       "extra": {
         "stars_today": 41034,
-        "stars_total": 250486,
+        "stars_total": 251885,
         "language": "TypeScript",
         "section": "main",
         "norm_score": 1.0,
-        "raw_score": 4105904.86
-      }
-    },
-    {
-      "title": "MakazhanAlpamys/Soup",
-      "url": "https://github.com/MakazhanAlpamys/Soup",
-      "source": "GitHub Trending · Python",
-      "section": "main",
-      "score": 0.437,
-      "desc": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.",
-      "extra": {
-        "stars_today": 247,
-        "stars_total": 9054,
-        "language": "Python",
-        "section": "main",
-        "norm_score": 0.4372,
-        "raw_score": 24790.54
+        "raw_score": 4105918.85
       }
     },
     {
@@ -106,11 +85,27 @@
       "desc": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
       "extra": {
         "stars_today": 2109,
-        "stars_total": 27817,
+        "stars_total": 27864,
         "language": "Python",
         "section": "main",
         "norm_score": 0.5886,
-        "raw_score": 211178.17
+        "raw_score": 211178.64
+      }
+    },
+    {
+      "title": "MakazhanAlpamys/Soup",
+      "url": "https://github.com/MakazhanAlpamys/Soup",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.437,
+      "desc": "Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU.",
+      "extra": {
+        "stars_today": 247,
+        "stars_total": 9061,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.4372,
+        "raw_score": 24790.61
       }
     },
     {
@@ -118,15 +113,15 @@
       "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
       "source": "Hacker News",
       "section": "main",
-      "score": 0.769,
+      "score": 0.732,
       "desc": "",
       "extra": {
         "hn_id": 50091788,
-        "comments": 503,
+        "comments": 514,
         "discuss": "https://news.ycombinator.com/item?id=50091788",
         "section": "main",
-        "norm_score": 0.769,
-        "raw_score": 868.0
+        "norm_score": 0.7318,
+        "raw_score": 879.0
       }
     },
     {
@@ -138,27 +133,11 @@
       "desc": "Write HTML. Render video. Built for agents.",
       "extra": {
         "stars_today": 1089,
-        "stars_total": 63901,
+        "stars_total": 63937,
         "language": "TypeScript",
         "section": "main",
         "norm_score": 0.0252,
-        "raw_score": 109539.01
-      }
-    },
-    {
-      "title": "anthropics/claude-plugins-official",
-      "url": "https://github.com/anthropics/claude-plugins-official",
-      "source": "GitHub Trending · Python",
-      "section": "main",
-      "score": 0.318,
-      "desc": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
-      "extra": {
-        "stars_today": 181,
-        "stars_total": 38144,
-        "language": "Python",
-        "section": "main",
-        "norm_score": 0.3181,
-        "raw_score": 18481.44
+        "raw_score": 109539.37
       }
     },
     {
@@ -170,11 +149,27 @@
       "desc": "Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS.",
       "extra": {
         "stars_today": 1502,
-        "stars_total": 11148,
+        "stars_total": 11203,
         "language": "Swift",
         "section": "main",
         "norm_score": 0.4139,
-        "raw_score": 150311.48
+        "raw_score": 150312.03
+      }
+    },
+    {
+      "title": "anthropics/claude-plugins-official",
+      "url": "https://github.com/anthropics/claude-plugins-official",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.318,
+      "desc": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
+      "extra": {
+        "stars_today": 181,
+        "stars_total": 38152,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.3181,
+        "raw_score": 18481.52
       }
     },
     {
@@ -182,15 +177,15 @@
       "url": "https://www.not-ship.com/how-amazon-pushes-up-prices-all-across-the-internet/",
       "source": "Hacker News",
       "section": "main",
-      "score": 0.696,
+      "score": 0.665,
       "desc": "",
       "extra": {
         "hn_id": 50084757,
-        "comments": 619,
+        "comments": 629,
         "discuss": "https://news.ycombinator.com/item?id=50084757",
         "section": "main",
-        "norm_score": 0.6958,
-        "raw_score": 786.0
+        "norm_score": 0.6647,
+        "raw_score": 799.0
       }
     },
     {
@@ -202,27 +197,11 @@
       "desc": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
       "extra": {
         "stars_today": 919,
-        "stars_total": 92735,
+        "stars_total": 92778,
         "language": "TypeScript",
         "section": "main",
         "norm_score": 0.0211,
-        "raw_score": 92827.35
-      }
-    },
-    {
-      "title": "p-e-w/heretic",
-      "url": "https://github.com/p-e-w/heretic",
-      "source": "GitHub Trending · Python",
-      "section": "main",
-      "score": 0.318,
-      "desc": "Fully automatic censorship removal for language models",
-      "extra": {
-        "stars_today": 181,
-        "stars_total": 35316,
-        "language": "Python",
-        "section": "main",
-        "norm_score": 0.3176,
-        "raw_score": 18453.16
+        "raw_score": 92827.78
       }
     },
     {
@@ -234,11 +213,27 @@
       "desc": "Fully autonomous AI Agents system capable of performing complex penetration testing tasks",
       "extra": {
         "stars_today": 1025,
-        "stars_total": 29898,
+        "stars_total": 29964,
         "language": "Go",
         "section": "main",
         "norm_score": 0.2775,
-        "raw_score": 102798.98
+        "raw_score": 102799.64
+      }
+    },
+    {
+      "title": "p-e-w/heretic",
+      "url": "https://github.com/p-e-w/heretic",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.318,
+      "desc": "Fully automatic censorship removal for language models",
+      "extra": {
+        "stars_today": 181,
+        "stars_total": 35322,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.3176,
+        "raw_score": 18453.22
       }
     },
     {
@@ -246,15 +241,15 @@
       "url": "https://mapwriting.substack.com/p/dentists",
       "source": "Hacker News",
       "section": "main",
-      "score": 0.517,
+      "score": 0.52,
       "desc": "",
       "extra": {
         "hn_id": 50050553,
-        "comments": 417,
+        "comments": 442,
         "discuss": "https://news.ycombinator.com/item?id=50050553",
         "section": "main",
-        "norm_score": 0.5174,
-        "raw_score": 586.0
+        "norm_score": 0.5197,
+        "raw_score": 626.0
       }
     },
     {
@@ -266,27 +261,11 @@
       "desc": "The open agent skills tool - npx skills",
       "extra": {
         "stars_today": 658,
-        "stars_total": 34994,
+        "stars_total": 34999,
         "language": "TypeScript",
         "section": "main",
         "norm_score": 0.0146,
-        "raw_score": 66149.94
-      }
-    },
-    {
-      "title": "home-assistant/core",
-      "url": "https://github.com/home-assistant/core",
-      "source": "GitHub Trending · Python",
-      "section": "main",
-      "score": 0.26,
-      "desc": "🏡 Open source home automation that puts local control and privacy first.",
-      "extra": {
-        "stars_today": 145,
-        "stars_total": 91509,
-        "language": "Python",
-        "section": "main",
-        "norm_score": 0.2602,
-        "raw_score": 15415.09
+        "raw_score": 66149.99
       }
     },
     {
@@ -298,11 +277,27 @@
       "desc": "Ghidra is a software reverse engineering (SRE) framework",
       "extra": {
         "stars_today": 1008,
-        "stars_total": 87841,
+        "stars_total": 87889,
         "language": "Java",
         "section": "main",
         "norm_score": 0.2742,
-        "raw_score": 101678.41
+        "raw_score": 101678.89
+      }
+    },
+    {
+      "title": "K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.286,
+      "desc": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "extra": {
+        "stars_today": 163,
+        "stars_total": 49678,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.2863,
+        "raw_score": 16796.78
       }
     },
     {
@@ -310,15 +305,15 @@
       "url": "https://anoma.ly/notes/opencode-2-0/",
       "source": "Hacker News",
       "section": "main",
-      "score": 0.431,
+      "score": 0.442,
       "desc": "",
       "extra": {
         "hn_id": 50094994,
-        "comments": 200,
+        "comments": 209,
         "discuss": "https://news.ycombinator.com/item?id=50094994",
         "section": "main",
-        "norm_score": 0.4309,
-        "raw_score": 489.0
+        "norm_score": 0.4417,
+        "raw_score": 533.0
       }
     },
     {
@@ -330,27 +325,11 @@
       "desc": "The open source coding agent.",
       "extra": {
         "stars_today": 320,
-        "stars_total": 213591,
+        "stars_total": 213604,
         "language": "TypeScript",
         "section": "main",
         "norm_score": 0.0068,
-        "raw_score": 34135.91
-      }
-    },
-    {
-      "title": "python/cpython",
-      "url": "https://github.com/python/cpython",
-      "source": "GitHub Trending · Python",
-      "section": "main",
-      "score": 0.229,
-      "desc": "The Python programming language",
-      "extra": {
-        "stars_today": 130,
-        "stars_total": 77556,
-        "language": "Python",
-        "section": "main",
-        "norm_score": 0.2293,
-        "raw_score": 13775.56
+        "raw_score": 34136.04
       }
     },
     {
@@ -362,11 +341,27 @@
       "desc": "Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks.",
       "extra": {
         "stars_today": 947,
-        "stars_total": 29351,
+        "stars_total": 29380,
         "language": "TypeScript",
         "section": "main",
         "norm_score": 0.2551,
-        "raw_score": 94993.51
+        "raw_score": 94993.8
+      }
+    },
+    {
+      "title": "home-assistant/core",
+      "url": "https://github.com/home-assistant/core",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.26,
+      "desc": "🏡 Open source home automation that puts local control and privacy first.",
+      "extra": {
+        "stars_today": 145,
+        "stars_total": 91512,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.2602,
+        "raw_score": 15415.12
       }
     },
     {
@@ -374,15 +369,15 @@
       "url": "https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-steeply-declined-in-the-past-30-years",
       "source": "Hacker News",
       "section": "main",
-      "score": 0.293,
+      "score": 0.294,
       "desc": "",
       "extra": {
         "hn_id": 50089921,
-        "comments": 325,
+        "comments": 342,
         "discuss": "https://news.ycombinator.com/item?id=50089921",
         "section": "main",
-        "norm_score": 0.2926,
-        "raw_score": 334.0
+        "norm_score": 0.2942,
+        "raw_score": 357.0
       }
     },
     {
@@ -394,375 +389,11 @@
       "desc": "The open-source CapCut alternative",
       "extra": {
         "stars_today": 301,
-        "stars_total": 94524,
+        "stars_total": 94538,
         "language": "TypeScript",
         "section": "main",
         "norm_score": 0.006,
-        "raw_score": 31045.24
-      }
-    },
-    {
-      "title": "ManlyMarco/KK-HF_Patch",
-      "url": "https://github.com/ManlyMarco/KK-HF_Patch",
-      "source": "恋活插件 · 标签",
-      "section": "koikatsu",
-      "score": 958.0,
-      "desc": "Automatically translate, uncensor and update Koikatu! and Koikatsu Party!",
-      "extra": {
-        "stars_total": 958,
-        "forks": 84,
-        "language": "Inno Setup",
-        "pushed": "2026-09-25",
-        "created": "2018-09-01",
-        "archived": false,
-        "topics": [
-          "bepinex",
-          "english-translation",
-          "koikatsu",
-          "koikatu",
-          "modpack",
-          "patcher"
-        ],
-        "section": "koikatsu",
-        "raw_score": 958.0
-      }
-    },
-    {
-      "title": "IllusionMods/KKManager",
-      "url": "https://github.com/IllusionMods/KKManager",
-      "source": "恋活插件 · 标签",
-      "section": "koikatsu",
-      "score": 641.0,
-      "desc": "Mod, plugin and card manager for games by Illusion that use BepInEx",
-      "extra": {
-        "stars_total": 641,
-        "forks": 81,
-        "language": "C#",
-        "pushed": "2026-09-26",
-        "created": "2018-06-10",
-        "archived": false,
-        "topics": [
-          "automatic-updates",
-          "koikatsu",
-          "koikatsu-party",
-          "koikatu",
-          "mod-manager"
-        ],
-        "section": "koikatsu",
-        "raw_score": 641.0
-      }
-    },
-    {
-      "title": "IllusionMods/KK_Plugins",
-      "url": "https://github.com/IllusionMods/KK_Plugins",
-      "source": "恋活插件 · 标签",
-      "section": "koikatsu",
-      "score": 532.0,
-      "desc": "Various plugins for various Illusion games",
-      "extra": {
-        "stars_total": 532,
-        "forks": 146,
-        "language": "C#",
-        "pushed": "2026-10-13",
-        "created": "2018-10-09",
-        "archived": false,
-        "topics": [
-          "bepinex",
-          "emotioncreators",
-          "honeyselect2",
-          "illusion",
-          "koikatsu",
-          "koikatsu-party"
-        ],
-        "section": "koikatsu",
-        "raw_score": 532.0
-      }
-    },
-    {
-      "title": "IllusionMods/BepisPlugins",
-      "url": "https://github.com/IllusionMods/BepisPlugins",
-      "source": "恋活插件 · 标签",
-      "section": "koikatsu",
-      "score": 471.0,
-      "desc": "A collection of essential BepInEx plugins for games made by Illusion.",
-      "extra": {
-        "stars_total": 471,
-        "forks": 98,
-        "language": "C#",
-        "pushed": "2026-09-23",
-        "created": "2018-02-26",
-        "archived": false,
-        "topics": [
-          "ai-girl",
-          "bepinex",
-          "emotioncreators",
-          "koikatsu",
-          "mods",
-          "screenshots"
-        ],
-        "section": "koikatsu",
-        "raw_score": 471.0
-      }
-    },
-    {
-      "title": "IllusionMods/IllusionModdingAPI",
-      "url": "https://github.com/IllusionMods/IllusionModdingAPI",
-      "source": "恋活插件 · 标签",
-      "section": "koikatsu",
-      "score": 331.0,
-      "desc": "Modding API for games made by Illusion (PHAPI / KKAPI / ECAPI / AIAPI / HS2API / KKSAPI)",
-      "extra": {
-        "stars_total": 331,
-        "forks": 51,
-        "language": "C#",
-        "pushed": "2026-09-20",
-        "created": "2018-11-11",
-        "archived": false,
-        "topics": [
-          "bepinex",
-          "game-plugin",
-          "koikatsu",
-          "koikatu",
-          "modding-library"
-        ],
-        "section": "koikatsu",
-        "raw_score": 331.0
-      }
-    },
-    {
-      "title": "Sauceke/LoveMachine",
-      "url": "https://github.com/Sauceke/LoveMachine",
-      "source": "恋活插件 · 标签",
-      "section": "koikatsu",
-      "score": 245.0,
-      "desc": "Sync Bluetooth sex toys to over 40 Hentai games",
-      "extra": {
-        "stars_total": 245,
-        "forks": 16,
-        "language": "",
-        "pushed": "2026-01-08",
-        "created": "2021-06-28",
-        "archived": true,
-        "topics": [
-          "bepinex",
-          "bepinex-plugins",
-          "buttplug",
-          "com3d2",
-          "honeyselect2",
-          "illusion-games"
-        ],
-        "section": "koikatsu",
-        "raw_score": 245.0
-      }
-    },
-    {
-      "title": "ManlyMarco/KKS-HF_Patch",
-      "url": "https://github.com/ManlyMarco/KKS-HF_Patch",
-      "source": "恋活插件 · 关键词",
-      "section": "koikatsu",
-      "score": 209.0,
-      "desc": "Automatically translate, uncensor and update Koikatsu Sunshine!",
-      "extra": {
-        "stars_total": 209,
-        "forks": 12,
-        "language": "Inno Setup",
-        "pushed": "2026-09-18",
-        "created": "2021-09-08",
-        "archived": false,
-        "topics": [],
-        "section": "koikatsu",
-        "raw_score": 209.0
-      }
-    },
-    {
-      "title": "IllusionMods/IllusionFixes",
-      "url": "https://github.com/IllusionMods/IllusionFixes",
-      "source": "恋活插件 · 标签",
-      "section": "koikatsu",
-      "score": 199.0,
-      "desc": "A collection of fixes for common issues found in games by Illusion",
-      "extra": {
-        "stars_total": 199,
-        "forks": 30,
-        "language": "C#",
-        "pushed": "2026-06-03",
-        "created": "2019-06-14",
-        "archived": false,
-        "topics": [
-          "ai-girl",
-          "ai-shoujo",
-          "bepinex",
-          "emotioncreators",
-          "koikatsu",
-          "koikatsu-party"
-        ],
-        "section": "koikatsu",
-        "raw_score": 199.0
-      }
-    },
-    {
-      "title": "ManlyMarco/IllusionCheatTools",
-      "url": "https://github.com/ManlyMarco/IllusionCheatTools",
-      "source": "恋活插件 · 标签",
-      "section": "koikatsu",
-      "score": 149.0,
-      "desc": "Trainer for games by Illusion",
-      "extra": {
-        "stars_total": 149,
-        "forks": 25,
-        "language": "C#",
-        "pushed": "2026-02-06",
-        "created": "2018-05-15",
-        "archived": false,
-        "topics": [
-          "bepinex",
-          "debugging",
-          "koikatsu",
-          "koikatu",
-          "plugin-development",
-          "trainer"
-        ],
-        "section": "koikatsu",
-        "raw_score": 149.0
-      }
-    },
-    {
-      "title": "IllusionMods/KoikatsuModdingTools",
-      "url": "https://github.com/IllusionMods/KoikatsuModdingTools",
-      "source": "恋活插件 · 关键词",
-      "section": "koikatsu",
-      "score": 147.0,
-      "desc": "Modding tools for Koikatsu",
-      "extra": {
-        "stars_total": 147,
-        "forks": 24,
-        "language": "C#",
-        "pushed": "2026-02-01",
-        "created": "2020-01-10",
-        "archived": false,
-        "topics": [],
-        "section": "koikatsu",
-        "raw_score": 147.0
-      }
-    },
-    {
-      "title": "ManlyMarco/Illusion-Overlay-Mods",
-      "url": "https://github.com/ManlyMarco/Illusion-Overlay-Mods",
-      "source": "恋活插件 · 标签",
-      "section": "koikatsu",
-      "score": 138.0,
-      "desc": "Adds overlay texture (tattoo) support to games by Illusion",
-      "extra": {
-        "stars_total": 138,
-        "forks": 37,
-        "language": "C#",
-        "pushed": "2026-09-10",
-        "created": "2018-12-03",
-        "archived": false,
-        "topics": [
-          "bepinex",
-          "game",
-          "koikatsu",
-          "koikatu",
-          "mod",
-          "overlay-textures"
-        ],
-        "section": "koikatsu",
-        "raw_score": 138.0
-      }
-    },
-    {
-      "title": "ManlyMarco/ABMX",
-      "url": "https://github.com/ManlyMarco/ABMX",
-      "source": "恋活插件 · 标签",
-      "section": "koikatsu",
-      "score": 137.0,
-      "desc": "Adds more character customization settings to games by Illusion",
-      "extra": {
-        "stars_total": 137,
-        "forks": 30,
-        "language": "C#",
-        "pushed": "2025-11-01",
-        "created": "2018-10-30",
-        "archived": false,
-        "topics": [
-          "bepinex",
-          "character-maker",
-          "gui",
-          "koikatsu",
-          "koikatu",
-          "mod"
-        ],
-        "section": "koikatsu",
-        "raw_score": 137.0
-      }
-    },
-    {
-      "title": "IllusionMods/HSPlugins",
-      "url": "https://github.com/IllusionMods/HSPlugins",
-      "source": "恋活插件 · 官方组织",
-      "section": "koikatsu",
-      "score": 108.0,
-      "desc": "",
-      "extra": {
-        "stars_total": 108,
-        "forks": 51,
-        "language": "C#",
-        "pushed": "2026-09-24",
-        "created": "2021-11-30",
-        "archived": false,
-        "topics": [],
-        "section": "koikatsu",
-        "raw_score": 108.0
-      }
-    },
-    {
-      "title": "ManlyMarco/KoikatuGameplayMods",
-      "url": "https://github.com/ManlyMarco/KoikatuGameplayMods",
-      "source": "恋活插件 · 标签",
-      "section": "koikatsu",
-      "score": 107.0,
-      "desc": "Mod that tweaks and (hopefully) improves Koikatu gameplay",
-      "extra": {
-        "stars_total": 107,
-        "forks": 28,
-        "language": "C#",
-        "pushed": "2026-06-09",
-        "created": "2018-06-13",
-        "archived": false,
-        "topics": [
-          "bepinex",
-          "koikatsu",
-          "koikatu"
-        ],
-        "section": "koikatsu",
-        "raw_score": 107.0
-      }
-    },
-    {
-      "title": "IllusionMods/IllusionLaunchers",
-      "url": "https://github.com/IllusionMods/IllusionLaunchers",
-      "source": "恋活插件 · 标签",
-      "section": "koikatsu",
-      "score": 89.0,
-      "desc": "English Launchers for games made by Illusion Soft",
-      "extra": {
-        "stars_total": 89,
-        "forks": 12,
-        "language": "C#",
-        "pushed": "2026-06-29",
-        "created": "2019-10-29",
-        "archived": false,
-        "topics": [
-          "ai-girl",
-          "ai-shoujo",
-          "ai-syoujyo",
-          "emotion-creators",
-          "haremmate",
-          "honeyselect"
-        ],
-        "section": "koikatsu",
-        "raw_score": 89.0
+        "raw_score": 31045.38
       }
     }
   ]

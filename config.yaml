@@ -61,6 +61,8 @@ sources:
   #   ③ org:IllusionMods      —— 官方 Mod 组织的仓库，插件最集中的地方（43 个）
   # 三个源的内容大量重叠，靠 main.py 的跨分栏去重合并成一份榜单。
 
+  # 【当前关闭】想重新启用就把下面三个 enabled 改回 true，
+  # 并把下方 sections 里的 koikatsu 段和 notify.sections 里的 koikatsu 一起放开。
   - type: github_search
     name: 恋活插件 · 标签
     query: "topic:koikatsu"
@@ -68,7 +70,7 @@ sources:
     limit: 40
     min_stars: 0
     section: koikatsu
-    enabled: true
+    enabled: false
 
   - type: github_search
     name: 恋活插件 · 关键词
@@ -76,7 +78,7 @@ sources:
     sort: stars
     limit: 40
     section: koikatsu
-    enabled: true
+    enabled: false
 
   - type: github_search
     name: 恋活插件 · 官方组织
@@ -84,7 +86,7 @@ sources:
     sort: stars
     limit: 40
     section: koikatsu
-    enabled: true
+    enabled: false
 
   # 只想看还在维护的插件时，把上面三个源换成这种写法（服务端就过滤掉老仓库）：
   #   query: "topic:koikatsu pushed:>=2025-01-01"
@@ -137,10 +139,11 @@ sections:
     top_n: 24
     merge: rotate
 
-  - id: koikatsu
-    title: 恋活插件排行
-    top_n: 15
-    merge: score
+  # 【当前关闭】恋活插件榜。重新启用时取消注释，并同时放开上方三个源的 enabled。
+  # - id: koikatsu
+  #   title: 恋活插件排行
+  #   top_n: 15
+  #   merge: score
 
 # --------------------------------------------------------------------------- #
 # 排名权重（可选）
@@ -176,5 +179,5 @@ output:
 notify:
   top_n: 8                  # 每个分栏默认列出几条
   sections:                 # 可给某个分栏单独指定条数（键是分栏 id）
-    main: 6
-    koikatsu: 5
+    main: 8
+    # koikatsu: 5           # 【当前关闭】恋活栏重新启用时放开
