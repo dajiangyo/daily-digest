@@ -1,6 +1,6 @@
 # 每日排行与 AI 速览 · 2026-10-15
 
-> 生成时间：2026-10-15 16:15:12 · 条目数：24
+> 生成时间：2026-10-15 16:38:46 · 条目数：24
 
 ## AI 速览
 
@@ -23,33 +23,6 @@
 **4. xtool-org/xtool（今日 +1502 star，总计 11248 star，Swift）**
 它是什么：跨平台 Xcode 替代品，基于 SwiftPM 在 Linux、Windows、macOS 上构建和部署 iOS 应用。
 为什么今天值得看：单日 +1502 star，解决了非 macOS 环境无法构建 iOS 的长期痛点，对跨平台团队意义重大。
-
-## 综合排行
-
-1. Alishahryar1/free-claude-code（今日 +540 star，总计 60619 star，Python）— 免费调用 Claude Code/Codex 等 9 种 harness，支持终端/IDE/手机/浏览器
-2. debpalash/VoiceStudio（今日 +3538 star，总计 67399 star，Python）— 本地化 ElevenLabs 平替
-3. Things to know when you get cancer（Hacker News，318 评论）
-4. morluto/rea（今日 +41034 star，总计 253343 star，TypeScript）— Agent 驱动逆向工程
-5. MakazhanAlpamys/Soup（今日 +247 star，总计 9065 star，Python）— 单 YAML 微调 LLM，4GB 显存可训 8B 模型
-6. ifixai-ai/iFixAi（今日 +2109 star，总计 27921 star，Python）— AI Agent 独立审计
-7. Containment and monitoring failures are to blame for AI hacking reports: experts（Hacker News，519 评论）
-8. heygen-com/hyperframes（今日 +1089 star，总计 63975 star，TypeScript）— 写 HTML 直接渲染视频，面向 Agent 设计
-9. anthropics/claude-plugins-official（今日 +181 star，总计 38170 star，Python）— Anthropic 官方 Claude Code 插件目录
-10. xtool-org/xtool（今日 +1502 star，总计 11248 star，Swift）— 跨平台 Xcode 替代
-11. Do dentists know what they're doing?（Hacker News，469 评论）
-12. mksglu/context-mode（今日 +947 star，总计 29445 star，TypeScript）— AI 编码 Agent 上下文优化，工具输出压缩 98%
-13. p-e-w/heretic（今日 +181 star，总计 35327 star，Python）— 语言模型自动去审查
-14. vxcontrol/pentagi（今日 +1025 star，总计 30028 star，Go）— 全自主渗透测试 Agent 系统
-15. OpenCode 2.0（Hacker News，218 评论）
-16. stablyai/orca（今日 +919 star，总计 92823 star，TypeScript）— 并行 Agent 舰队的 ADE，支持自带订阅
-17. home-assistant/core（今日 +145 star，总计 91514 star，Python）— 本地优先的开源智能家居
-18. NationalSecurityAgency/ghidra（今日 +1008 star，总计 87938 star，Java）— NSA 开源逆向框架
-19. Tiny Little Office（Hacker News，57 评论）
-20. vercel-labs/skills（今日 +658 star，总计 35008 star，TypeScript）— 开放式 Agent skills 工具 npx skills
-21. python/cpython（今日 +130 star，总计 77558 star，Python）— Python 语言本体
-22. rust-lang/rust（今日 +207 star，总计 120201 star，Rust）— Rust 语言本体
-23. Americans' social activity has steeply declined in the past 30 years（Hacker News，353 评论）
-24. anomalyco/opencode（今日 +320 star，总计 213623 star，TypeScript）— 开源编码 Agent
 
 ## 分类速览
 
