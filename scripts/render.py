@@ -13,6 +13,13 @@ from sources import Item
 # 避免页面上出现两个「AI 速览」。
 RESERVED_HEADINGS = {"AI 速览", "抓取异常"}
 
+# AI 有时会自己再列一遍完整榜单（标题不叫「综合排行」而是这些名字）。
+# 这类小节整段丢弃——榜单表格由渲染层负责，重复一遍纯属噪音。
+AI_LIST_HEADINGS = {"完整榜单", "完整排行", "榜单", "排行榜", "完整列表"}
+
+_HEADING_RE = re.compile(r"^(#{1,6})\s+(.*?)\s*#*\s*$")
+_TABLE_ROW_RE = re.compile(r"^\s*\|.*\|\s*$")
+
 
 def _fmt_metrics(it: Item) -> str:
     extra = it.extra or {}
@@ -47,16 +54,20 @@ def _strip_section_headings(summary: str, sections: List[tuple]) -> str:
        提示词要求模型用「### 榜单观察 · <榜单名>」写观察、不要复述榜单，但模型
        不一定每次都听话。重名小节有两重问题：页面上会出现两个「综合排行」，
        而且正文通常就是对下方表格的逐条复述。
-    2) 与渲染层固定标题重名（如「AI 速览」）——只丢标题行，保留正文。
+    2) AI 自己列的完整榜单（标题叫「完整榜单」「排行榜」之类）——整段丢弃。
+       它列的内容与下方渲染层输出的表格完全重复，而且模型写的 Markdown 表格
+       又宽又长，塞进晨报里只会挤掉真正的观察内容。
+    3) 与渲染层固定标题重名（如「AI 速览」）——只丢标题行，保留正文。
        模型爱在正文开头自己加一个总标题，而外面已经有一层了；但紧跟其后的
        那句风向概述是真内容，必须留下。
     """
     titles = {str(t).strip() for _sid, t, _g in sections}
+    titles |= AI_LIST_HEADINGS
     kept: List[str] = []
     skip_level: Optional[int] = None  # 非 None 表示正在丢弃该层级的小节
 
     for line in summary.splitlines():
-        m = re.match(r"^(#{1,6})\s+(.*?)\s*#*\s*$", line)
+        m = _HEADING_RE.match(line)
         if m:
             level = len(m.group(1))
             heading = m.group(2).strip()
@@ -65,7 +76,7 @@ def _strip_section_headings(summary: str, sections: List[tuple]) -> str:
                 skip_level = None
             if skip_level is None:
                 if heading in titles:
-                    # 榜单重名：整段丢，从标题行开始
+                    # 榜单重名 / AI 自列榜单：整段丢，从标题行开始
                     skip_level = level
                     continue
                 if heading in RESERVED_HEADINGS:
@@ -77,6 +88,31 @@ def _strip_section_headings(summary: str, sections: List[tuple]) -> str:
 
     # 丢掉整段后可能留下多余空行，压一下
     return re.sub(r"\n{3,}", "\n\n", "\n".join(kept)).strip()
+
+
+def _is_table_sep(line: str) -> bool:
+    """判断是否 Markdown 表格的分隔行，如 |---|---|。"""
+    if not _TABLE_ROW_RE.match(line):
+        return False
+    cells = [c.strip() for c in line.strip().strip("|").split("|")]
+    return bool(cells) and all(re.fullmatch(r":?-{2,}:?", c) for c in cells)
+
+
+def _split_table_row(line: str) -> List[str]:
+    """拆一行 Markdown 表格为单元格。"""
+    return [c.strip() for c in line.strip().strip("|").split("|")]
+
+
+def _render_table(rows: List[List[str]]) -> str:
+    """把已解析的表格行渲染成 <table>。rows[0] 是表头。"""
+    if not rows:
+        return ""
+    head = "".join(f"<th>{_md_inline_to_html(c)}</th>" for c in rows[0])
+    body = "".join(
+        "<tr>" + "".join(f"<td>{_md_inline_to_html(c)}</td>" for c in r) + "</tr>"
+        for r in rows[1:]
+    )
+    return f"<table>\n<thead><tr>{head}</tr></thead>\n<tbody>{body}</tbody>\n</table>"
 
 
 def render_markdown(
@@ -188,10 +224,31 @@ def md_to_html_fragment(md: str) -> str:
             out.append("</ul>")
             in_ul = False
 
-    for raw in lines:
-        line = raw.rstrip()
+    i = 0
+    total = len(lines)
+    while i < total:
+        line = lines[i].rstrip()
         if not line.strip():
             close_ul()
+            i += 1
+            continue
+
+        # Markdown 表格：连续的 | ... | 行，且第二行是 |---|---| 分隔行。
+        # 不处理表格的话，整张表会被当成普通段落，页面上出现一堆
+        # <p>| 排名 | 项目/条目 | ...|</p> 的竖线乱码。
+        if _TABLE_ROW_RE.match(line):
+            block: List[str] = []
+            while i < total and _TABLE_ROW_RE.match(lines[i].rstrip()):
+                block.append(lines[i].rstrip())
+                i += 1
+            close_ul()
+            if len(block) >= 2 and _is_table_sep(block[1]):
+                rows = [_split_table_row(r) for r in block if not _is_table_sep(r)]
+                out.append(_render_table(rows))
+            else:
+                # 没有分隔行，不是表格，老老实实当段落
+                for r in block:
+                    out.append(f"<p>{_md_inline_to_html(r)}</p>")
             continue
 
         if line.startswith("### "):
@@ -218,6 +275,7 @@ def md_to_html_fragment(md: str) -> str:
         else:
             close_ul()
             out.append(f"<p>{_md_inline_to_html(line)}</p>")
+        i += 1
 
     close_ul()
     return "\n".join(out)
@@ -352,6 +410,13 @@ def render_notification(
     """推送用的精简版：只要 AI 摘要 + 各分栏 Top N，避免通知被截断。"""
     out: List[str] = [f"📅 {date} 每日速览", ""]
 
+    if not sections:
+        sections = [("main", "今日 Top", items)]
+
+    # 先清掉 AI 自列的完整榜单（「### 完整榜单」+ 一整个 Markdown 表格），
+    # 否则那几十行会把下面 24 行的摘要预算全吃光，真正的观察内容一条都发不出去。
+    summary = _strip_section_headings(summary, sections)
+
     # 摘要只取前若干行，防止超过各平台消息长度上限
     summary_lines = [ln for ln in summary.strip().splitlines() if ln.strip()]
     body = "\n".join(summary_lines[:24])
@@ -359,9 +424,6 @@ def render_notification(
         body += "\n…"
     out.append(body)
     out.append("")
-
-    if not sections:
-        sections = [("main", "今日 Top", items)]
 
     # section_top_n 可给某个分栏单独指定条数，例如 {"main": 6, "extra": 3}
     per_section = section_top_n or {}
