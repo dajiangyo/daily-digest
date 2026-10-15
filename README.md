@@ -64,6 +64,9 @@ git push -u origin main
 |---|---|---|
 | `LLM_API_KEY` | AI 总结的密钥 | 可选（不配则用模板摘要） |
 | `LLM_BASE_URL` | 接口地址，如 `https://api.deepseek.com/v1` | 配了 key 就要配 |
+
+> **别把密钥写进 `config.yaml`**——这是公开仓库，提交上去等于公开泄露。
+> 密钥只放 Secrets，`config.yaml` 里只写模型名和参数。
 | `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` | Telegram 推送 | 渠道任选 |
 | `WECOM_WEBHOOK_KEY` | 企业微信群机器人 key | 渠道任选 |
 | `FEISHU_WEBHOOK` (+`FEISHU_SECRET`) | 飞书机器人 | 渠道任选 |
@@ -136,7 +139,37 @@ python scripts/main.py --root . --dry-run --no-llm
 export LLM_API_KEY=sk-xxxx
 export LLM_BASE_URL=https://api.deepseek.com/v1
 python scripts/main.py --root .
+
+# 当天已经跑成功过会被幂等检查跳过，加 --force 强制重跑
+python scripts/main.py --root . --dry-run --force
 ```
+
+### 换 AI 模型
+
+`config.yaml` 的 `llm` 段：
+
+```yaml
+llm:
+  model: claude-sonnet-5    # 换成你接口支持的任意模型名
+  temperature: 0.3
+  max_tokens: 8000          # 见下方「推理模型」说明，别调太低
+  timeout: 300              # 推理模型响应慢，实测 25-60 秒
+```
+
+想知道接口支持哪些模型，浏览器打开 `<你的 base_url>/models`，带上
+`Authorization: Bearer <key>` 头就能拿到列表。
+
+**推理模型的两个坑**（`scripts/summarize.py` 里已处理）：
+
+1. **思考 token 也算 `completion_tokens`**。新一代模型（Claude Opus 5 / Sonnet 5
+   这类）先在内部思考再输出，`max_tokens` 给小了会出现「HTTP 200、
+   `finish_reason=stop`、`content` 却是空字符串」——token 全烧在思考上，
+   晨报会静默变空白。所以默认给足 8000，并在拿到空 content 时明确报错降级。
+2. **Cloudflare 会挡自定义 UA**。部分中转站前置了 CF，UA 写成 `xxx/1.0`
+   会被直接 403（error code 1010），脚本已改用浏览器 UA。
+
+调用失败（含 5xx / 429 / TLS 抖动）会自动重试 3 次并退避 3、6 秒；
+连续失败则降级为模板摘要，**不会让整条流水线失败**。
 
 产物位置：
 
@@ -287,3 +320,9 @@ rank:
 - **单次最多返回 1000 条**：GitHub 搜索接口的硬限制，`per_page` 上限 100。
 - **搜索接口跨限定符不支持 OR**：`topic:a OR b in:name` 这类写法实测直接返回
   0 条。覆盖范围不重叠的检索要拆成多个源，再靠跨分栏去重合并。
+- **AI 接口不通时不会报错**：连续重试 3 次仍失败就降级为模板摘要，产物里会写
+  「当前为无 AI 模式」。如果你看到这句话但明明配了 key，先看 Actions 日志里
+  `[summarize]` 那几行的具体报错，多半是链路问题而不是配置问题。
+- **本地网络抖动很常见**：实测同一台机器上，`github.com` 与中转站会同时
+  出现 TLS 握手被掐（`SSLEOFError`）、过一会儿又恢复。本地调试失败不代表
+  Actions 会失败——Runner 在 Azure 网段，链路完全不同。
