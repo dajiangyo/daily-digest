@@ -1,0 +1,13 @@
+{
+  "last_date": "2026-10-15",
+  "last_run_at": "2026-10-15 16:59:04",
+  "push_ok": true,
+  "count": 24,
+  "sources": [
+    "GitHub Trending · Python",
+    "GitHub Trending · TypeScript",
+    "GitHub Trending · 全语言",
+    "Hacker News"
+  ],
+  "errors": []
+}
