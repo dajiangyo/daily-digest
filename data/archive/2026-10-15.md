@@ -1,6 +1,6 @@
 # 每日排行与 AI 速览 · 2026-10-15
 
-> 生成时间：2026-10-15 16:59:04 · 条目数：24
+> 生成时间：2026-10-15 17:17:37 · 条目数：24
 
 ## AI 速览
 
@@ -39,35 +39,6 @@
 ### 一句话提醒
 
 今天最该注意的是逆向与审计类 Agent 集体爆发——能力越强边界越模糊，先补齐审计与合规再让 Agent 碰生产与二进制。
-
-### 完整榜单
-
-| 排名 | 项目/条目 | 简介 | 数据 |
-|---|---|---|---|
-| 1 | [GitHub Trending · Python] Alishahryar1/free-claude-code | Use Claude Code, Codex, VSCode, Pi, and OpenCode (and 6 other harnesses) for free (1.3B+ free tokens) from your terminal, app, IDE, or phone, and now from the browser with native b | 今日 +540 star，总计 60625 star |
-| 2 | [GitHub Trending · 全语言] debpalash/VoiceStudio | VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages. | 今日 +3538 star，总计 67511 star |
-| 3 | [Hacker News] Things to know when you get cancer | — | 321 评论 |
-| 4 | [GitHub Trending · TypeScript] morluto/rea | Reverse engineer anything with agents, from app behavior down to native binaries. | 今日 +41034 star，总计 254473 star |
-| 5 | [GitHub Trending · Python] MakazhanAlpamys/Soup | Fine-tune LLMs from one YAML. Layer streaming trains an 8B model on a 4 GB laptop GPU. | 今日 +247 star，总计 9068 star |
-| 6 | [GitHub Trending · 全语言] ifixai-ai/iFixAi | Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iF | 今日 +2109 star，总计 27984 star |
-| 7 | [Hacker News] Do dentists know what they're doing? | — | 492 评论 |
-| 8 | [GitHub Trending · TypeScript] heygen-com/hyperframes | Write HTML. Render video. Built for agents. | 今日 +1089 star，总计 64004 star |
-| 9 | [GitHub Trending · Python] anthropics/claude-plugins-official | Official, Anthropic-managed directory of high quality Claude Code Plugins. | 今日 +181 star，总计 38181 star |
-| 10 | [GitHub Trending · 全语言] xtool-org/xtool | Cross-platform Xcode replacement. Build and deploy iOS apps with SwiftPM on Linux, Windows, macOS. | 今日 +1502 star，总计 11287 star |
-| 11 | [Hacker News] OpenCode 2.0 | — | 226 评论 |
-| 12 | [GitHub Trending · TypeScript] mksglu/context-mode | Context window optimization for AI coding agents. Sandboxes tool output (98% reduction), persists session memory, and enforces routing across 17 platforms via MCP + hooks. | 今日 +947 star，总计 29477 star |
-| 13 | [GitHub Trending · Python] p-e-w/heretic | Fully automatic censorship removal for language models | 今日 +181 star，总计 35330 star |
-| 14 | [GitHub Trending · 全语言] vxcontrol/pentagi | Fully autonomous AI Agents system capable of performing complex penetration testing tasks | 今日 +1025 star，总计 30077 star |
-| 15 | [Hacker News] Tiny Little Office | — | 61 评论 |
-| 16 | [GitHub Trending · TypeScript] stablyai/orca | Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime. | 今日 +919 star，总计 92864 star |
-| 17 | [GitHub Trending · Python] home-assistant/core | 🏡 Open source home automation that puts local control and privacy first. | 今日 +145 star，总计 91514 star |
-| 18 | [GitHub Trending · 全语言] NationalSecurityAgency/ghidra | Ghidra is a software reverse engineering (SRE) framework | 今日 +1008 star，总计 87978 star |
-| 19 | [Hacker News] Americans' social activity has steeply declined in the past 30 years | — | 360 评论 |
-| 20 | [GitHub Trending · TypeScript] vercel-labs/skills | The open agent skills tool - npx skills | 今日 +658 star，总计 35017 star |
-| 21 | [GitHub Trending · Python] python/cpython | The Python programming language | 今日 +130 star，总计 77559 star |
-| 22 | [GitHub Trending · 全语言] rust-lang/rust | Empowering everyone to build reliable and efficient software. | 今日 +207 star，总计 120221 star |
-| 23 | [Hacker News] Why is every rationalist blog post way too long? | — | 289 评论 |
-| 24 | [GitHub Trending · TypeScript] anomalyco/opencode | The open source coding agent. | 今日 +320 star，总计 213646 star |
 
 ## 综合排行
 
