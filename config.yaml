@@ -1,0 +1,180 @@
+# 每日排行与 AI 速览 · 配置文件
+# 改这个文件就能调整行为，不需要动代码。
+
+# 最终进榜单的条目数（单栏模式用；多栏模式见下方 sections）
+top_n: 30
+
+# --------------------------------------------------------------------------- #
+# 数据源
+# --------------------------------------------------------------------------- #
+# 五种类型：
+#   github_trending  GitHub 每日 Trending（当天新增 star）
+#   github_search    GitHub 仓库搜索（按总 star 追某个话题，如恋活插件）
+#   hackernews       Hacker News 榜单
+#   generic_html     任意站点列表页（写 CSS 选择器）
+#   json_api         任意 JSON 接口（写点号路径）
+#
+# 通用字段：
+#   enabled: false  临时关掉某个源而不删配置
+#   section: xxx    归到哪个分栏（对应下方 sections 的 id），默认 main
+sources:
+  # ---- GitHub Trending（无需密钥）----
+  - type: github_trending
+    name: GitHub Trending · 全语言
+    since: daily            # daily / weekly / monthly
+    section: main
+    enabled: true
+
+  - type: github_trending
+    name: GitHub Trending · Python
+    since: daily
+    language: python
+    section: main
+    enabled: true
+
+  - type: github_trending
+    name: GitHub Trending · TypeScript
+    since: daily
+    language: typescript
+    section: main
+    enabled: true
+
+  # ---- Hacker News（官方 API，无需密钥）----
+  - type: hackernews
+    name: Hacker News
+    endpoint: topstories    # topstories / beststories / newstories
+    limit: 25
+    section: main
+    enabled: true
+
+  # ------------------------------------------------------------------------- #
+  # 恋活（Koikatsu）插件生态
+  # ------------------------------------------------------------------------- #
+  # 为什么要单独做一栏：Koikatsu 是 2018 年的游戏，生态成熟但没有「当日新增
+  # star」这种东西，Trending 榜上几乎永远见不到它。改用搜索接口按总 star 排序，
+  # 才能稳定拿到这个生态里的头部插件。
+  #
+  # 三路检索刻意分开，因为它们的覆盖范围不重叠：
+  #   ① topic:koikatsu        —— 作者主动打了标签的，最规范（97 个仓库）
+  #   ② koikatsu in:name,desc —— 名字/简介里提到恋活的（235 个仓库），
+  #                              能捞到没打标签的插件，但会混进一些泛用工具
+  #   ③ org:IllusionMods      —— 官方 Mod 组织的仓库，插件最集中的地方（43 个）
+  # 三个源的内容大量重叠，靠 main.py 的跨分栏去重合并成一份榜单。
+
+  - type: github_search
+    name: 恋活插件 · 标签
+    query: "topic:koikatsu"
+    sort: stars             # stars / updated / forks
+    limit: 40
+    min_stars: 0
+    section: koikatsu
+    enabled: true
+
+  - type: github_search
+    name: 恋活插件 · 关键词
+    query: "koikatsu in:name,description"
+    sort: stars
+    limit: 40
+    section: koikatsu
+    enabled: true
+
+  - type: github_search
+    name: 恋活插件 · 官方组织
+    query: "org:IllusionMods"
+    sort: stars
+    limit: 40
+    section: koikatsu
+    enabled: true
+
+  # 只想看还在维护的插件时，把上面三个源换成这种写法（服务端就过滤掉老仓库）：
+  #   query: "topic:koikatsu pushed:>=2025-01-01"
+  # 或用 pushed_within_days 让脚本自动算日期：
+  #   pushed_within_days: 365
+
+  # ---- 示例：任意 JSON 接口 ----
+  # 以「开发者的头条」dev.to 为例，字段路径按需修改。
+  - type: json_api
+    name: dev.to
+    url: https://dev.to/api/articles
+    params:
+      top: 7
+      per_page: 20
+    list_path: ""           # 顶层就是数组
+    title_key: title
+    url_key: url
+    score_key: positive_reactions_count
+    desc_key: description
+    enabled: false          # 想用就改成 true
+
+  # ---- 示例：任意列表页 ----
+  # 站点改版只需要改下面的选择器。
+  - type: generic_html
+    name: 自定义站点
+    url: https://example.com/list
+    base_url: https://example.com
+    item_selector: "div.item"
+    title_selector: "a.title"
+    link_selector: "a.title"
+    score_selector: "span.score"
+    desc_selector: "p.desc"
+    limit: 20
+    enabled: false
+
+# --------------------------------------------------------------------------- #
+# 分栏（产物里每个分栏是一个独立榜单）
+# --------------------------------------------------------------------------- #
+# 不写这一段就退化成单栏「完整排行」，与旧版行为一致。
+# id 要和上面 sources 里的 section 对应。
+#
+# merge 决定这一栏怎么排序：
+#   rotate（默认）—— 各源轮转交错。用于栏内源量纲不同的情况（Trending 当日
+#                    新增 star vs HN 点赞数），否则条目多的大源会刷屏。
+#   score         —— 直接按分数降序。用于栏内源量纲相同的情况（例如恋活三路
+#                    检索都是 GitHub 总星标），轮转反而会打乱真实排名。
+sections:
+  - id: main
+    title: 综合排行
+    top_n: 24
+    merge: rotate
+
+  - id: koikatsu
+    title: 恋活插件排行
+    top_n: 15
+    merge: score
+
+# --------------------------------------------------------------------------- #
+# 排名权重（可选）
+# --------------------------------------------------------------------------- #
+# 键是源的 name，值是该源在轮转合并时每轮多拿的名额。
+# 例：想让「恋活插件 · 标签」这一路在恋活栏里多占位，就写它的 name。
+rank:
+  weights: {}
+  #  weights:
+  #    恋活插件 · 标签: 2
+
+# --------------------------------------------------------------------------- #
+# AI 总结
+# --------------------------------------------------------------------------- #
+# base_url / api_key 走环境变量 LLM_BASE_URL / LLM_API_KEY（Actions 里放 secrets）
+# 不配置也能跑，会降级为模板摘要。
+llm:
+  model: deepseek-chat      # deepseek-chat / gpt-4o-mini / moonshot-v1-8k / qwen-plus ...
+  temperature: 0.3
+
+# --------------------------------------------------------------------------- #
+# 输出
+# --------------------------------------------------------------------------- #
+output:
+  docs_dir: docs            # Pages 部署目录
+  data_dir: data            # Markdown / JSON 归档目录
+  archive: true             # 是否保留历史归档
+
+# --------------------------------------------------------------------------- #
+# 推送
+# --------------------------------------------------------------------------- #
+# 渠道开关全部由环境变量决定，这里只控制推送内容长度。
+notify:
+  top_n: 8                  # 每个分栏默认列出几条
+  sections:                 # 可给某个分栏单独指定条数（键是分栏 id）
+    main: 6
+    koikatsu: 5

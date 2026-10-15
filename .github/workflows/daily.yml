@@ -1,0 +1,131 @@
+name: Daily Digest
+
+# ===========================================================================
+# 目录约定：本文件所在的目录就是仓库根目录。
+# 即把 automation/ 里的内容直接作为仓库根，结构如下：
+#
+#   repo/
+#   ├── .github/workflows/daily.yml   ← 本文件
+#   ├── .github/workflows/pages.yml
+#   ├── config.yaml
+#   ├── requirements.txt
+#   ├── scripts/*.py
+#   ├── docs/index.html               ← 产物，Pages 部署源
+#   └── data/                         ← 产物，Markdown/JSON 归档
+#
+# 如果你要把 automation/ 作为子目录保留，则需要：
+#   1) 把 .github/workflows/ 整个搬到仓库根
+#   2) 下方所有路径前加 automation/
+#   3) working-directory 改为 automation，--root 改为 ..
+# ===========================================================================
+
+on:
+  # ---------------------------------------------------------------------------
+  # 调度时间：北京时间 08:33 为主，09:07 为备份。
+  #
+  # 为什么避开整点：
+  #   1) GitHub 官方说明高负载时段（尤其"每小时开始"附近）会延迟调度，延迟
+  #      可达数十分钟，极端情况下直接丢弃且不补跑。
+  #   2) :00 / :15 / :30 / :45 是大量 workflow 的默认落点（`*/15`、`*/30`
+  #      这类写法太多），这四个分钟数比其它分钟挤得多。
+  #   3) 还有一层：UTC 00:00 是全球每日定时任务的最大洪峰（08:00 北京时间
+  #      正好撞上它）。所以主时间取 08:33（= UTC 00:33），已经过了峰尖。
+  #
+  # 为什么要两个时间点：
+  #   08:33 被延迟或丢弃时，09:07 补上。main.py 里有幂等检查——当天已成功
+  #   生成并推送过就直接退出，所以两个时间点不会让你收到两条重复消息。
+  #   若 08:33 生成成功但推送失败，09:07 会重试推送。
+  #
+  # timezone 必须与 cron 同级写在同一个条目里；写成 on 的兄弟节点会静默失效。
+  # ---------------------------------------------------------------------------
+  schedule:
+    - cron: "33 0 * * *"
+      timezone: "Asia/Shanghai"
+    - cron: "7 1 * * *"
+      timezone: "Asia/Shanghai"
+  workflow_dispatch:
+    inputs:
+      no_llm:
+        description: "跳过 AI，仅用模板摘要（调试用）"
+        type: boolean
+        default: false
+      dry_run:
+        description: "只生成不推送（调试用）"
+        type: boolean
+        default: false
+      force:
+        description: "忽略幂等检查，强制重新生成并推送"
+        type: boolean
+        default: false
+
+# 防止上一轮没跑完就叠加下一轮。
+# cancel-in-progress: false 表示新任务排队等待，而不是掐断正在跑的任务——
+# 掐断会让这一天的产物半途而废。
+concurrency:
+  group: daily-digest
+  cancel-in-progress: false
+
+# 最小权限：只需要写 contents 来 commit 产物，其余一律不要。
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate digest
+        env:
+          # ---- AI 总结（不配则自动降级为模板摘要）----
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}
+          # ---- GitHub 搜索接口的 token ----
+          # 不配也能跑（匿名限速 10 次/分钟），但配了更稳。
+          # 注意：GITHUB_TOKEN 是 Actions 自动注入的临时令牌，直接引用即可，
+          # 不需要自己去建 secret；它对公开仓库搜索有读权限，够用。
+          GITHUB_TOKEN: ${{ secrets.GH_SEARCH_TOKEN || github.token }}
+          # ---- 推送渠道（配哪个用哪个，没配的自动跳过）----
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          WECOM_WEBHOOK_KEY: ${{ secrets.WECOM_WEBHOOK_KEY }}
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          FEISHU_SECRET: ${{ secrets.FEISHU_SECRET }}
+          DINGTALK_WEBHOOK: ${{ secrets.DINGTALK_WEBHOOK }}
+          DINGTALK_SECRET: ${{ secrets.DINGTALK_SECRET }}
+          SERVERCHAN_KEY: ${{ secrets.SERVERCHAN_KEY }}
+          GENERIC_WEBHOOK_URL: ${{ secrets.GENERIC_WEBHOOK_URL }}
+          GENERIC_WEBHOOK_TOKEN: ${{ secrets.GENERIC_WEBHOOK_TOKEN }}
+          # 通知里附带的 Pages 链接（在 Variables 里配，不是 Secrets）
+          PAGES_URL: ${{ vars.PAGES_URL }}
+        run: |
+          ARGS=""
+          if [ "${{ inputs.no_llm }}" = "true" ]; then ARGS="$ARGS --no-llm"; fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
+          if [ "${{ inputs.force }}" = "true" ]; then ARGS="$ARGS --force"; fi
+          python scripts/main.py --root . $ARGS
+
+      - name: Commit results
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "无变化，跳过提交"
+            exit 0
+          fi
+          git commit -m "chore(digest): $(date -u +'%Y-%m-%d %H:%M') UTC"
+          git push

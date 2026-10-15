@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# 运行产物
+.changed
+
+# 本地调试用配置（含密钥，绝不入库）
+config.local.yaml
+.env
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
