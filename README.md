@@ -64,17 +64,34 @@ git push -u origin main
 |---|---|---|
 | `LLM_API_KEY` | AI 总结的密钥 | 可选（不配则用模板摘要） |
 | `LLM_BASE_URL` | 接口地址，如 `https://api.deepseek.com/v1` | 配了 key 就要配 |
-
-> **别把密钥写进 `config.yaml`**——这是公开仓库，提交上去等于公开泄露。
-> 密钥只放 Secrets，`config.yaml` 里只写模型名和参数。
 | `TELEGRAM_BOT_TOKEN` + `TELEGRAM_CHAT_ID` | Telegram 推送 | 渠道任选 |
 | `WECOM_WEBHOOK_KEY` | 企业微信群机器人 key | 渠道任选 |
 | `FEISHU_WEBHOOK` (+`FEISHU_SECRET`) | 飞书机器人 | 渠道任选 |
 | `DINGTALK_WEBHOOK` (+`DINGTALK_SECRET`) | 钉钉机器人 | 渠道任选 |
 | `SERVERCHAN_KEY` | Server酱 | 渠道任选 |
+| `QQ_MAIL_USER` + `QQ_MAIL_AUTH_CODE` | QQ 邮箱推送（手机 QQ 弹「QQ邮箱提醒」） | 渠道任选 |
+| `QMSG_KEY` | Qmsg 酱，真正的 QQ 消息 | 渠道任选 |
 | `GENERIC_WEBHOOK_URL` | 自建服务 / n8n / Node-RED | 渠道任选 |
 
+> **别把密钥写进 `config.yaml`**——这是公开仓库，提交上去等于公开泄露。
+> 密钥只放 Secrets，`config.yaml` 里只写模型名和参数。
+
 推送渠道**配一个就够**，没配的会自动跳过，不会让任务失败。
+
+#### 想推到手机 QQ
+
+两条路，按「省事」到「像聊天」排：
+
+| 方式 | 需要的 Secret | 怎么拿 | 效果 |
+|---|---|---|---|
+| **QQ 邮箱**（推荐） | `QQ_MAIL_USER` = 你的 QQ 邮箱<br>`QQ_MAIL_AUTH_CODE` = 16 位授权码 | QQ邮箱网页版 → 设置 → 账户 → 开启 `POP3/SMTP服务` → 按提示短信验证 → 拿到授权码 | 手机 QQ 弹「QQ邮箱提醒」，点开是完整晨报 |
+| **Qmsg 酱** | `QMSG_KEY`（可选 `QMSG_QQ` 指定收件 QQ） | qmsg.zendee.cn 登录拿 key，把它的机器人加为好友 | 真正的 QQ 消息，能推到群 |
+
+`QQ_MAIL_AUTH_CODE` **不是 QQ 登录密码**，是开启 SMTP 服务后单独生成的那串 16 位字符。
+填错的话日志里会出现「服务器在登录阶段断开了连接」——QQ 在授权码错误时直接掐连接，
+不返回标准的 535 认证失败，所以脚本特意把这条错误翻译成人话。
+
+`QQ_MAIL_TO` 可以不配，默认发给自己（= `QQ_MAIL_USER`）；配了就发到别的邮箱。
 
 ### 4. 配置变量（可选）
 
