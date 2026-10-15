@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>每日排行与 AI 速览 · 2026-10-15</title>
+<title>每日排行与 AI 速览 · 2026-10-16</title>
 <style>
   :root { color-scheme: light dark; }
   * { box-sizing: border-box; }
@@ -47,59 +47,68 @@
 </head>
 <body>
 <h1>每日排行与 AI 速览</h1>
-<div class="meta">2026-10-15 · 共 24 条 · 生成于 2026-10-15 18:32:18</div>
+<div class="meta">2026-10-16 · 共 24 条 · 生成于 2026-10-16 03:58:57</div>
 
 <div class="card">
-<p>今天整体风向是 Agent 正在系统性接管开发、安全与音视频工具链，核心诉求从“更强的模型”转向“更本地、更跨平台、更省 token 的落地方式”。</p>
+<p>今天技术风向呈现明显的“Agent 工程化 + 硬核逆向”双主线：一边在卷如何让 Agent 更好管、更省上下文、更可审计，另一边直接让 Agent 去啃二进制逆向和全栈音视频这类最重的活。</p>
 <h3>值得关注</h3>
 <ul>
-<li><strong>morluto/rea（今日 +41034 star）</strong>：定位是用 Agent 从应用行为到原生二进制一键逆向，当日暴涨 4 万 star 远超榜单其他项目，说明市场对“自动化逆向”有极强的刚需，值得看它的 Agent 如何拆解闭源逻辑。</li>
-<li><strong>debpalash/VoiceStudio（今日 +3538 star）</strong>：开源、完全本地的 ElevenLabs 平替，覆盖语音克隆、声音设计、视频配音、听写转录到有声书，支持 646 种语言，今天值得看是因为它把高成本的语音商业服务拉回本地隐私可控。</li>
-<li><strong>xtool-org/xtool（今日 +1502 star）</strong>：用 SwiftPM 在 Linux/Windows/macOS 上构建和部署 iOS 应用的跨平台 Xcode 替代品，打破了 iOS 开发必须绑定 macOS 的限制，对小团队和 CI 场景意义很大。</li>
-<li><strong>vxcontrol/pentagi（今日 +1025 star）</strong>：全自主的 AI Agent 渗透测试系统，能执行复杂渗透任务，与同日走红的逆向工具形成呼应，代表了安全领域从辅助工具向自主 Agent 的跃迁。</li>
+<li><strong>morluto/rea</strong>（今日 +32282 star，总计 266751 star，TypeScript）：定位是用 Agent 逆向一切，从 App 行为到原生二进制。今天断层式暴涨，说明自动化逆向已从安全圈小众需求变成 Agent 落地的刚需场景，值得看它的 Agent 工作流如何拆解动态行为与静态分析。</li>
+</ul>
+<ul>
+<li><strong>debpalash/VoiceStudio</strong>（今日 +3027 star，总计 68697 star，Python）：开源、完全本地化的 ElevenLabs 平替，集成语音克隆、声音设计、视频配音、听写转录与有声书生成，支持 646 种语言。今天值得看在于它把高成本的语音栈一站式本地化，对隐私和成本敏感的团队是立即可试的方案。</li>
+</ul>
+<ul>
+<li><strong>ifixai-ai/iFixAi</strong>（今日 +1887 star，总计 28290 star，Python）：做 AI Agent 的独立审计，支持由人或 Agent 自身来回答“Agent 是否在做该做的事”。在 Agent 经济快速扩张的当下，这类可验证性基建比再多一个 Agent 框架更稀缺。</li>
+</ul>
+<ul>
+<li><strong>stablyai/orca</strong>（今日 +937 star，总计 93316 star，TypeScript）：面向并行 Agent 舰队的 ADE，支持用自有订阅跑任意编码 Agent，覆盖桌面、移动端和远端运行时。值得看的是它对“多 Agent 并行协作”的产品化封装，而非单点提效。</li>
+</ul>
+<ul>
+<li><strong>Claude Sonnet 5 Open</strong>（Hacker News 225 评论）：Meta 开源的 Claude Sonnet 5 相关能力，面向眼镜等可穿戴端侧的开放构建。今天值得看是因为它可能成为端侧多模态 Agent 的新入口，关注其开放范围与硬件绑定程度。</li>
 </ul>
 <h3>榜单观察 · 综合排行</h3>
-<p>综合排行呈现出明显的“Agent 工具化”共性：GitHub 侧 Python 与 TypeScript 几乎平分秋色，Python 承载语音、微调、审计类 Agent，TypeScript 则集中在为 Agent 设计的视频渲染、上下文优化和技能分发；选题上逆向/安全（rea、ghidra、pentagi）、音视频生成（VoiceStudio、hyperframes）与开发者提效（xtool、context-mode、orac）三线并行，共同点是强调本地化、跨平台和成本控制。而 Hacker News 侧则与之形成反差，更关注技术背后的社会与商业代价，讨论热度集中在医疗、消费定价与社会连接等议题上。</p>
+<p>本期综合排行呈现“GitHub 主攻 Agent 基建、Hacker News 主聊底层与安全”的分野。GitHub 侧 TypeScript 占绝对主导（8 席），Python 紧随其后（7 席），技术栈倾向非常一致：几乎都在解决 Agent 原生化问题——CLI 工具 Agent 化、上下文窗口压缩与沙箱化、记忆持久化、Harness 性能优化、多平台路由与 MCP 接入。另一条暗线是逆向与审计的回归，rea 与 ghidra 同期上榜，前者用 Agent 重做逆向，后者是经典 SRE 框架，呼应了 Hacker News 上内核驱动漏洞、广告链路零点击间谍软件等安全议题。整体共性是：不再卷模型本身，而是卷 Agent 如何更可控、更便宜、更可信地跑在真实系统里。</p>
 <h3>分类速览</h3>
 <ul>
-<li><strong>Agent 编码与上下文工程</strong>：围绕订阅复用、多 Agent 并行、上下文窗口压缩和 YAML 一键微调，核心是让现有模型在有限资源下跑得更久更便宜。</li>
-<li><strong>音视频与内容生成</strong>：从声明式 HTML 生成视频到开源剪辑工具，趋势是把创作能力封装成 Agent 可直接调用的接口。</li>
-<li><strong>安全、逆向与审计</strong>：自主渗透、模型审查移除与传统逆向框架同时上榜，攻防两端都在被 Agent 重构。</li>
-<li><strong>开发基建与本地化系统</strong>：跨平台构建、智能家居中枢和语言本身，体现对“去厂商锁定、本地优先”的持续追求。</li>
-<li><strong>社区热议议题</strong>：Hacker News 关注点落在健康、平台经济与社会行为变迁，提供了工具热潮之外的冷思考视角。</li>
+<li><strong>Agent 基础设施与效能优化</strong>：集中在多 Agent 调度、上下文与工具输出治理、记忆与路由、Harness 性能与安全加固等工程化痛点。</li>
+<li><strong>模型接入与知识增强</strong>：围绕多源 LLM 统一接入、智能路由容灾，以及面向科研场景的技能库与配套教材，补齐 Agent 的知识与执行广度。</li>
+<li><strong>音视频与本地化创作</strong>：覆盖 HTML 渲染视频、短视频自动化工作流、端侧生成式桌面应用及 3D 工具链的 LLM 接管，强调本地部署与创作者效率。</li>
+<li><strong>逆向工程与安全攻防</strong>：从 Agent 驱动的自动化逆向到传统 SRE 框架，再到内核与广告链路的真实攻防案例，安全成为今日另一高频主题。</li>
+<li><strong>系统交互与端侧体验</strong>：涉及拟物化 Wayland 桌面、手机接管与可穿戴开放能力，探索 Agent 在桌面与端侧的交互新形态。</li>
 </ul>
 <h3>一句话提醒</h3>
-<p>今天最该盯住的是 Agent 逆向与自主安全这条线——当 rea 这类项目一天吸星 4 万，意味着漏洞挖掘和合规审计的工作流可能很快被重写，别只当热度看。</p>
+<p>今天最该注意的是：逆向与审计类 Agent 已从概念验证进入可用性比拼，引入前务必在真实二进制和真实业务链路上做小闭环验证，别被 star 增速误判成熟度。</p>
 </div>
 
 <h2>综合排行</h2>
 <table>
 <thead><tr><th>#</th><th>项目</th><th>来源</th><th>指标</th></tr></thead>
 <tbody>
-<tr><td>1</td><td><a href="https://github.com/Alishahryar1/free-claude-code" target="_blank" rel="noopener">Alishahryar1/free-claude-code</a></td><td>GitHub Trending · Python</td><td>+540 ⭐/日 · 60643 ⭐ · Python</td></tr>
-<tr><td>2</td><td><a href="https://github.com/debpalash/VoiceStudio" target="_blank" rel="noopener">debpalash/VoiceStudio</a></td><td>GitHub Trending · 全语言</td><td>+3538 ⭐/日 · 67697 ⭐ · Python</td></tr>
-<tr><td>3</td><td><a href="https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/" target="_blank" rel="noopener">Things to know when you get cancer</a></td><td>Hacker News</td><td>348 💬</td></tr>
-<tr><td>4</td><td><a href="https://github.com/morluto/rea" target="_blank" rel="noopener">morluto/rea</a></td><td>GitHub Trending · TypeScript</td><td>+41034 ⭐/日 · 256409 ⭐ · TypeScript</td></tr>
-<tr><td>5</td><td><a href="https://github.com/MakazhanAlpamys/Soup" target="_blank" rel="noopener">MakazhanAlpamys/Soup</a></td><td>GitHub Trending · Python</td><td>+247 ⭐/日 · 9074 ⭐ · Python</td></tr>
-<tr><td>6</td><td><a href="https://github.com/ifixai-ai/iFixAi" target="_blank" rel="noopener">ifixai-ai/iFixAi</a></td><td>GitHub Trending · 全语言</td><td>+2109 ⭐/日 · 28077 ⭐ · Python</td></tr>
-<tr><td>7</td><td><a href="https://www.not-ship.com/how-amazon-pushes-up-prices-all-across-the-internet/" target="_blank" rel="noopener">How Amazon pushes up prices all across the Internet</a></td><td>Hacker News</td><td>645 💬</td></tr>
-<tr><td>8</td><td><a href="https://github.com/heygen-com/hyperframes" target="_blank" rel="noopener">heygen-com/hyperframes</a></td><td>GitHub Trending · TypeScript</td><td>+1089 ⭐/日 · 64053 ⭐ · TypeScript</td></tr>
-<tr><td>9</td><td><a href="https://github.com/anthropics/claude-plugins-official" target="_blank" rel="noopener">anthropics/claude-plugins-official</a></td><td>GitHub Trending · Python</td><td>+181 ⭐/日 · 38193 ⭐ · Python</td></tr>
-<tr><td>10</td><td><a href="https://github.com/xtool-org/xtool" target="_blank" rel="noopener">xtool-org/xtool</a></td><td>GitHub Trending · 全语言</td><td>+1502 ⭐/日 · 11363 ⭐ · Swift</td></tr>
-<tr><td>11</td><td><a href="https://mapwriting.substack.com/p/dentists" target="_blank" rel="noopener">Do dentists know what they&#x27;re doing?</a></td><td>Hacker News</td><td>520 💬</td></tr>
-<tr><td>12</td><td><a href="https://github.com/stablyai/orca" target="_blank" rel="noopener">stablyai/orca</a></td><td>GitHub Trending · TypeScript</td><td>+919 ⭐/日 · 92933 ⭐ · TypeScript</td></tr>
-<tr><td>13</td><td><a href="https://github.com/p-e-w/heretic" target="_blank" rel="noopener">p-e-w/heretic</a></td><td>GitHub Trending · Python</td><td>+181 ⭐/日 · 35339 ⭐ · Python</td></tr>
-<tr><td>14</td><td><a href="https://github.com/vxcontrol/pentagi" target="_blank" rel="noopener">vxcontrol/pentagi</a></td><td>GitHub Trending · 全语言</td><td>+1025 ⭐/日 · 30198 ⭐ · Go</td></tr>
-<tr><td>15</td><td><a href="https://anoma.ly/notes/opencode-2-0/" target="_blank" rel="noopener">OpenCode 2.0</a></td><td>Hacker News</td><td>248 💬</td></tr>
-<tr><td>16</td><td><a href="https://github.com/vercel-labs/skills" target="_blank" rel="noopener">vercel-labs/skills</a></td><td>GitHub Trending · TypeScript</td><td>+658 ⭐/日 · 35023 ⭐ · TypeScript</td></tr>
-<tr><td>17</td><td><a href="https://github.com/home-assistant/core" target="_blank" rel="noopener">home-assistant/core</a></td><td>GitHub Trending · Python</td><td>+145 ⭐/日 · 91514 ⭐ · Python</td></tr>
-<tr><td>18</td><td><a href="https://github.com/NationalSecurityAgency/ghidra" target="_blank" rel="noopener">NationalSecurityAgency/ghidra</a></td><td>GitHub Trending · 全语言</td><td>+1008 ⭐/日 · 88060 ⭐ · Java</td></tr>
-<tr><td>19</td><td><a href="https://tinylittleoffice.com/" target="_blank" rel="noopener">Tiny Little Office</a></td><td>Hacker News</td><td>72 💬</td></tr>
-<tr><td>20</td><td><a href="https://github.com/anomalyco/opencode" target="_blank" rel="noopener">anomalyco/opencode</a></td><td>GitHub Trending · TypeScript</td><td>+320 ⭐/日 · 213690 ⭐ · TypeScript</td></tr>
-<tr><td>21</td><td><a href="https://github.com/python/cpython" target="_blank" rel="noopener">python/cpython</a></td><td>GitHub Trending · Python</td><td>+130 ⭐/日 · 77560 ⭐ · Python</td></tr>
-<tr><td>22</td><td><a href="https://github.com/mksglu/context-mode" target="_blank" rel="noopener">mksglu/context-mode</a></td><td>GitHub Trending · 全语言</td><td>+947 ⭐/日 · 29538 ⭐ · TypeScript</td></tr>
-<tr><td>23</td><td><a href="https://www.dataforprogress.org/blog/2026/9/29/americans-social-activity-has-steeply-declined-in-the-past-30-years" target="_blank" rel="noopener">Americans&#x27; social activity has steeply declined in the past 30 years</a></td><td>Hacker News</td><td>383 💬</td></tr>
-<tr><td>24</td><td><a href="https://github.com/OpenCut-app/OpenCut" target="_blank" rel="noopener">OpenCut-app/OpenCut</a></td><td>GitHub Trending · TypeScript</td><td>+301 ⭐/日 · 94586 ⭐ · TypeScript</td></tr>
+<tr><td>1</td><td><a href="https://github.com/fyzugx/DEsk" target="_blank" rel="noopener">Wayland desktop for Linux with skeuomorphic design</a></td><td>Hacker News</td><td>161 💬</td></tr>
+<tr><td>2</td><td><a href="https://github.com/stablyai/orca" target="_blank" rel="noopener">stablyai/orca</a></td><td>GitHub Trending · TypeScript</td><td>+937 ⭐/日 · 93316 ⭐ · TypeScript</td></tr>
+<tr><td>3</td><td><a href="https://github.com/ifixai-ai/iFixAi" target="_blank" rel="noopener">ifixai-ai/iFixAi</a></td><td>GitHub Trending · Python</td><td>+1887 ⭐/日 · 28290 ⭐ · Python</td></tr>
+<tr><td>4</td><td><a href="https://github.com/morluto/rea" target="_blank" rel="noopener">morluto/rea</a></td><td>GitHub Trending · 全语言</td><td>+32282 ⭐/日 · 266751 ⭐ · TypeScript</td></tr>
+<tr><td>5</td><td><a href="https://research.meta.ai/blog/muse-spark-open" target="_blank" rel="noopener">Muse Spark Open</a></td><td>Hacker News</td><td>225 💬</td></tr>
+<tr><td>6</td><td><a href="https://github.com/heygen-com/hyperframes" target="_blank" rel="noopener">heygen-com/hyperframes</a></td><td>GitHub Trending · TypeScript</td><td>+879 ⭐/日 · 64407 ⭐ · TypeScript</td></tr>
+<tr><td>7</td><td><a href="https://github.com/HKUDS/CLI-Anything" target="_blank" rel="noopener">HKUDS/CLI-Anything</a></td><td>GitHub Trending · Python</td><td>+759 ⭐/日 · 53038 ⭐ · Python</td></tr>
+<tr><td>8</td><td><a href="https://github.com/debpalash/VoiceStudio" target="_blank" rel="noopener">debpalash/VoiceStudio</a></td><td>GitHub Trending · 全语言</td><td>+3027 ⭐/日 · 68697 ⭐ · Python</td></tr>
+<tr><td>9</td><td><a href="https://blog.dfb.sh/blog/eap770-root-for-two-zeros/" target="_blank" rel="noopener">Wanted to download an ISO, ended up writing a kernel exploit</a></td><td>Hacker News</td><td>153 💬</td></tr>
+<tr><td>10</td><td><a href="https://github.com/paperclipai/paperclip" target="_blank" rel="noopener">paperclipai/paperclip</a></td><td>GitHub Trending · TypeScript</td><td>+584 ⭐/日 · 102642 ⭐ · TypeScript</td></tr>
+<tr><td>11</td><td><a href="https://github.com/harry0703/MoneyPrinterTurbo" target="_blank" rel="noopener">harry0703/MoneyPrinterTurbo</a></td><td>GitHub Trending · Python</td><td>+475 ⭐/日 · 131534 ⭐ · Python</td></tr>
+<tr><td>12</td><td><a href="https://github.com/NationalSecurityAgency/ghidra" target="_blank" rel="noopener">NationalSecurityAgency/ghidra</a></td><td>GitHub Trending · 全语言</td><td>+1366 ⭐/日 · 88559 ⭐ · Java</td></tr>
+<tr><td>13</td><td><a href="https://already-clean.goodfire.com/" target="_blank" rel="noopener">Neural networks are clean</a></td><td>Hacker News</td><td>89 💬</td></tr>
+<tr><td>14</td><td><a href="https://github.com/tashfeenahmed/freellmapi" target="_blank" rel="noopener">tashfeenahmed/freellmapi</a></td><td>GitHub Trending · TypeScript</td><td>+583 ⭐/日 · 35709 ⭐ · TypeScript</td></tr>
+<tr><td>15</td><td><a href="https://github.com/bojieli/ai-agent-book" target="_blank" rel="noopener">bojieli/ai-agent-book</a></td><td>GitHub Trending · Python</td><td>+206 ⭐/日 · 54401 ⭐ · Python</td></tr>
+<tr><td>16</td><td><a href="https://github.com/K-Dense-AI/scientific-agent-skills" target="_blank" rel="noopener">K-Dense-AI/scientific-agent-skills</a></td><td>GitHub Trending · 全语言</td><td>+1091 ⭐/日 · 50311 ⭐ · Python</td></tr>
+<tr><td>17</td><td><a href="https://www.derekthompson.org/p/i-know-why-the-mathematicians-weep" target="_blank" rel="noopener">I know why the mathematicians weep</a></td><td>Hacker News</td><td>466 💬</td></tr>
+<tr><td>18</td><td><a href="https://github.com/SegFault42/HeliosGen" target="_blank" rel="noopener">SegFault42/HeliosGen</a></td><td>GitHub Trending · TypeScript</td><td>+426 ⭐/日 · 3089 ⭐ · TypeScript</td></tr>
+<tr><td>19</td><td><a href="https://github.com/ShawnPana/phone-harness" target="_blank" rel="noopener">ShawnPana/phone-harness</a></td><td>GitHub Trending · Python</td><td>+203 ⭐/日 · 3654 ⭐ · Python</td></tr>
+<tr><td>20</td><td><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener">affaan-m/ECC</a></td><td>GitHub Trending · 全语言</td><td>+1015 ⭐/日 · 280209 ⭐ · JavaScript</td></tr>
+<tr><td>21</td><td><a href="https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/" target="_blank" rel="noopener">Zero-Click Spyware Delivered via Targeted Ads: AdFection</a></td><td>Hacker News</td><td>66 💬</td></tr>
+<tr><td>22</td><td><a href="https://github.com/anomalyco/opencode" target="_blank" rel="noopener">anomalyco/opencode</a></td><td>GitHub Trending · TypeScript</td><td>+375 ⭐/日 · 213871 ⭐ · TypeScript</td></tr>
+<tr><td>23</td><td><a href="https://github.com/ahujasid/mcp-for-blender" target="_blank" rel="noopener">ahujasid/mcp-for-blender</a></td><td>GitHub Trending · Python</td><td>+141 ⭐/日 · 30950 ⭐ · Python</td></tr>
+<tr><td>24</td><td><a href="https://github.com/mksglu/context-mode" target="_blank" rel="noopener">mksglu/context-mode</a></td><td>GitHub Trending · 全语言</td><td>+902 ⭐/日 · 29728 ⭐ · TypeScript</td></tr>
 </tbody>
 </table>
 
