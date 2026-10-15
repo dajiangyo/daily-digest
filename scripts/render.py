@@ -317,7 +317,7 @@ def render_notification(
     if not sections:
         sections = [("main", "今日 Top", items)]
 
-    # section_top_n 可给某个分栏单独指定条数，例如 {"koikatsu": 5}
+    # section_top_n 可给某个分栏单独指定条数，例如 {"main": 6, "extra": 3}
     per_section = section_top_n or {}
     total_shown = 0
     for sid, title, group in sections:

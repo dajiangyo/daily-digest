@@ -113,8 +113,9 @@ def _rank_section(
 ) -> List[Any]:
     """给一个分栏排序，按 merge 模式二选一。
 
-    merge: score（默认对恋活这类栏使用）
-        分栏内各源量纲相同（都是总星标）→ 直接按分数降序。
+    merge: score
+        分栏内各源量纲相同（例如都用 github_search，分数都是总星标）
+        → 直接按分数降序。
         轮转交错在这里是错的：实测 108★ 会排到 958★ 前面。
 
     merge: rotate（不写时的默认值）
@@ -186,7 +187,7 @@ def main() -> int:
     weights = (cfg.get("rank", {}) or {}).get("weights") or None
     order_index = {str(sc.get("id", "main")): i for i, sc in enumerate(sections_cfg)}
 
-    # 跨分栏去重：同一仓库被多个源抓到（例如既在 topic:koikatsu 又在关键词搜索里），
+    # 跨分栏去重：同一仓库被多个源抓到（例如既在 topic 搜索又在关键词搜索里），
     # 只保留一次——归给声明更靠前的分栏；同一分栏内保留分高的。
     kept: Dict[str, Any] = {}
     for it in items:

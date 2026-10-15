@@ -180,14 +180,13 @@ def fetch_github_trending(cfg: Dict[str, Any]) -> List[Item]:
 
 
 def fetch_github_search(cfg: Dict[str, Any]) -> List[Item]:
-    """GitHub 仓库搜索，用来追某个话题的高星项目（如恋活插件生态）。
+    """GitHub 仓库搜索，用来追某个话题的高星项目。
 
     比 Trending 更适合「追话题」：Trending 只反映当天新增 star，冷门但成熟的
-    生态（例如 koikatsu 插件）几乎永远上不了榜；搜索接口按总 star 排序，
-    能稳定拿到该话题的头部项目。
+    生态几乎永远上不了榜；搜索接口按总 star 排序，能稳定拿到该话题的头部项目。
 
     配置项：
-      query                必填，GitHub 搜索语法，如 'topic:koikatsu'
+      query                必填，GitHub 搜索语法，如 'topic:stable-diffusion'
       sort                 stars（默认）/ updated / forks
       limit                取多少条，默认 20
       min_stars            客户端过滤，低于该星数丢弃

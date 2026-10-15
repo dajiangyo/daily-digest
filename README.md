@@ -8,25 +8,26 @@
 ```
 cron 触发（北京时间 08:33 主 / 09:07 备份，均避开整点）
         ↓
-多源抓取（GitHub Trending ×3 + Hacker News + 恋活插件 ×3）
+多源抓取（GitHub Trending ×3 + Hacker News）
         ↓
-跨分栏去重 → 按分栏排名 → 各自出榜
+按分栏去重排名
         ↓
 AI 总结（DeepSeek / OpenAI / Moonshot / 智谱 / 本地 Ollama）
         ↓
-渲染 Markdown + HTML（综合排行 + 恋活插件排行）
+渲染 Markdown + HTML
         ↓
 写文件 → commit 回仓库 → Pages 自动部署 → 推送通知
         ↓
 记录 state.json（当天已成功则后续时间点自动跳过）
 ```
 
-产物里有两份独立榜单：
+产出一份综合榜单：
 
 | 分栏 | 内容 | 排序方式 |
 |---|---|---|
 | 综合排行 | GitHub Trending（全语言/Python/TypeScript）+ Hacker News | 轮转交错，防止单一源刷屏 |
-| 恋活插件排行 | Koikatsu 插件生态（topic + 关键词 + 官方组织三路检索） | 直接按总星标降序 |
+
+想加更多榜单只需在 `config.yaml` 里写新的 `section`，详见「四、加数据源」。
 
 ## 一、部署（约 5 分钟）
 
@@ -162,22 +163,31 @@ python scripts/main.py --root .
 
 **GitHub 搜索**（追某个话题的高星项目）
 
-Trending 只反映「当天新增 star」，成熟但冷门的生态（比如恋活插件）永远上不了榜。
-想追话题就用搜索接口，按总星标排序：
+Trending 只反映「当天新增 star」，成熟但冷门的项目永远上不了榜。
+想追某个话题就用搜索接口，按总星标排序：
 
 ```yaml
 - type: github_search
-  name: 恋活插件 · 标签
-  query: "topic:koikatsu"        # 任意 GitHub 搜索语法
-  sort: stars                    # stars / updated / forks
-  limit: 40                      # 最大 100
-  min_stars: 0                   # 客户端过滤，低于该星数丢弃
-  pushed_within_days: 365        # 可选：只留最近 N 天有推送的
-  section: koikatsu
+  name: 话题追踪 · 示例
+  query: "topic:stable-diffusion"   # 任意 GitHub 搜索语法
+  sort: stars                       # stars / updated / forks
+  limit: 40                         # 最大 100
+  min_stars: 0                      # 客户端过滤，低于该星数丢弃
+  pushed_within_days: 365           # 可选：只留最近 N 天有推送的
+  section: main
 ```
 
-想换成别的话题只改 `query`：`topic:stable-diffusion`、`org:xxx`、
-`"vrm in:name,description"` 都行。
+`query` 支持 GitHub 搜索的全部语法，几种常用写法：
+
+| 写法 | 作用 |
+|---|---|
+| `topic:xxx` | 作者主动打了标签的仓库，最规范 |
+| `"xxx in:name,description"` | 名字或简介里提到关键词的，覆盖面更广 |
+| `org:xxx` | 某个组织下的全部仓库 |
+| `topic:xxx pushed:>=2025-01-01` | 叠加活跃度过滤（也可用 `pushed_within_days`） |
+
+多个覆盖范围不重叠的检索要拆成多个源，再靠跨分栏去重合并——
+GitHub 搜索 API 不支持跨限定符的 `OR`（实测直接返回 0 条）。
 
 > 搜索接口匿名限速 10 次/分钟。Actions 里会自动用 `github.token`，
 > 无需自己建 secret（workflow 已配好）。本地跑想提速的话设个环境变量：
@@ -241,14 +251,16 @@ Hacker News 是「点赞数」（几百）。直接全局排序会让 HN 全部�
 
 **量纲相同 → 直接排序（`merge: score`）**
 
-恋活栏的三个源都是 GitHub 总星标，量纲一样。这时轮转是**错的**——
-实测踩到过：108★ 的 `IllusionMods/HSPlugins` 排到了 958★ 的
-`ManlyMarco/KK-HF_Patch` 前面，只因为它来自另一个源。
+如果一栏里的几个源量纲一样（比如都用 `github_search`，分数都是 GitHub 总星标），
+轮转就是**错的**——实测踩到过：108★ 的仓库排到了 958★ 的前面，
+只因为它来自另一个源。
 
-所以 `rank_by_score()` 直接按星标降序。这里有个坑值得记下来：
+所以 `rank_by_score()` 直接按分数降序。这里有个坑值得记下来：
 排序键读的是 `extra["raw_score"]` 而**不是** `it.score`——因为
 `dedupe_rank()` 会把 `it.score` 原地改写成归一化值，两个函数若先后作用于
-同一批对象，直接读 `it.score` 拿到的会是 `[0, 1]` 而不是真实星标。
+同一批对象，直接读 `it.score` 拿到的会是 `[0, 1]` 而不是真实分数。
+
+> 一句话选法：**同一栏里分数能直接比大小 → `score`；不能比 → `rotate`。**
 
 ### 加权
 
@@ -270,8 +282,8 @@ rank:
 - **Actions 单 job 上限 6 小时**：本项目单次运行通常 1-2 分钟，远不会触及。
 - **GitHub ToS**：不得用于与软件项目无关的活动（挂代理、挖矿、刷量）。
   本项目属于「数据收集 + 报告生成」，在允许范围内。
-- **搜索接口限速**：匿名 10 次/分钟、带 token 30 次/分钟。本项目的恋活栏
-  用了 3 个搜索源，一次运行只发 3 个请求，远不触及。但如果把
-  `pushed_within_days` 设得很小导致某次搜索返回 0 条，不会重试到触发限速。
+- **搜索接口限速**：匿名 10 次/分钟、带 token 30 次/分钟。默认配置里没启用
+  `github_search`，用到了才受此限制；一次运行每个源只发 1 个请求，通常远不触及。
 - **单次最多返回 1000 条**：GitHub 搜索接口的硬限制，`per_page` 上限 100。
-  恋活生态总共 200 多个仓库，够用。
+- **搜索接口跨限定符不支持 OR**：`topic:a OR b in:name` 这类写法实测直接返回
+  0 条。覆盖范围不重叠的检索要拆成多个源，再靠跨分栏去重合并。

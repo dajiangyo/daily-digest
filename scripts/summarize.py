@@ -65,7 +65,7 @@ def _listing(items: List[Item], sections: Optional[List[tuple]] = None) -> str:
         line += f"\n   链接：{it.url}"
         return line
 
-    # 有分栏时按栏输出，让模型能分辨「综合榜」与「恋活插件榜」两批内容
+    # 有分栏时按栏输出，让模型能分辨每个榜单各自的内容
     if sections:
         blocks: List[str] = []
         for _sid, title, group in sections:
