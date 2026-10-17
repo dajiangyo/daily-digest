@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-17",
-  "generated_at": "2026-10-17T03:38:30.537050+08:00",
+  "date": "2026-10-18",
+  "generated_at": "2026-10-18T02:43:24.642664+08:00",
   "count": 24,
   "errors": [],
-  "summary": "Agent 正在从“帮你写代码”加速外溢到逆向、审计、科研和音视频生产全链路，本地化与技能化成为今天最强的两条主线。\n\n## 值得关注\n\n**1. morluto/rea（今日 +25333 star，总计 288621 star，TypeScript）**\n能用 Agent 从应用行为一直逆向到原生二进制的逆向工程框架。今天单日暴涨 2.5w star 断层领先，说明市场对“Agent 做逆向/安全分析”的需求远超预期，值得所有做安全、客户端分析和 Agent 工具链的人重点跟踪。\n\n**2. debpalash/VoiceStudio（今日 +2301 star，总计 70715 star，Python）**\n号称完全本地化的开源 ElevenLabs 平替，集成语音克隆、声音设计、视频配音、听写转录和有声书制作，支持 646 种语言。在云端语音服务成本和隐私顾虑下，本地化多模态方案正成为新刚需。\n\n**3. xerj-org/xerj（今日 +1647 star，总计 6770 star，Rust）**\n为 AI 搜索数据而生的 Rust 工具，一条命令即可索引代码、文档和日志，让 Agent 无需靠 grep/sed 浪费 token 就能理解你的数据。直击 Agent 长上下文的 token 浪费痛点，基建属性很强。\n\n**4. anthropics/claude-plugins-official（今日 +1552 star，总计 40309 star，Python）**\nAnthropic 官方维护的 Claude Code 插件目录。今天的高增长代表官方生态开始收敛，插件质量和分发标准将直接影响后续所有 Claude Code 技能的选型。\n\n### 榜单观察 · 综合排行\n\n综合排行呈现高度的“Agent 技能化”共识：近半数上榜项目围绕 Agent 技能库、框架和方法论展开，从通用开发到科研、学术写作均被技能化封装。技术栈上 Python 仍是 AI 应用主体，TypeScript 紧随其后承载大量 Agent 交互与音视频前端工具，Rust 则以搜索与索引等高性能基建切入。另一条暗线是音视频生产力的爆发，短视频生成、HTML 渲染视频到开源剪辑工具形成闭环。Hacker News 侧的讨论则在降温炒作，转向反思 AI 基准与真实劳动的错位、软件渲染与本地推理等更务实的议题。\n\n## 分类速览\n\n- **Agent 框架与技能生态：** 科研、学术写作、通用开发方法论等多类技能库集中上榜，官方插件与性能优化框架同步受关注。\n- **音视频生成与创作：** 覆盖一键生成短视频、HTML 转视频、影视站搭建和开源剪辑工具，强调本地化与对 Agent 友好。\n- **推理与数据基建：** 包含极速推理引擎、面向 AI 的自动索引搜索以及为 Agent 赋予 CAD 能力的底层工具。\n- **社区热点与行业观察：** 围绕 AI 基准覆盖度不足、软件渲染回归、端侧大模型推理及密码学曲线溯源等话题的深度讨论。\n\n## 一句话提醒\n\n今天别只追单个爆款工具，优先理清你要用的 Agent 技能生态和插件标准，选错框架比错过一个应用损失更大。",
+  "summary": "# 每日速览 2026-10-18\n\n共 24 个条目，来自 4 个源。\n\n## 值得关注\n\n- **debpalash/VoiceStudio** — GitHub Trending · 全语言\n  VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & \n  [打开原文](https://github.com/debpalash/VoiceStudio)\n- **DeepSeek-v4.1-Flash-1017** — Hacker News\n  <a href=\"https:&#x2F;&#x2F;api-docs.deepseek.com&#x2F;news&#x2F;news261017&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;api-docs.deepseek.com&#x2\n  [打开原文](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017)\n- **chthollyphile/folia-major** — GitHub Trending · TypeScript\n  专注于绚丽的歌词动画效果的本地音乐/navidrome/第三方多平台在线音乐播放器\n  [打开原文](https://github.com/chthollyphile/folia-major)\n- **yt-dlp/yt-dlp** — GitHub Trending · Python\n  A feature-rich command-line audio/video downloader\n  [打开原文](https://github.com/yt-dlp/yt-dlp)\n- **MadsLorentzen/ai-job-search** — GitHub Trending · 全语言\n  The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover lett\n  [打开原文](https://github.com/MadsLorentzen/ai-job-search)\n\n## 分栏速览\n\n- **综合排行**（24 条）：debpalash/VoiceStudio、DeepSeek-v4.1-Flash-1017、chthollyphile/folia-major、yt-dlp/yt-dlp、MadsLorentzen/ai-job-search、You could have invented transformers from memory、cursor/plugins、ScrapeCreators/social-media-research-skills\n\n## 分类速览\n\n- **GitHub Trending · 全语言**（6 条）：debpalash/VoiceStudio、MadsLorentzen/ai-job-search、anthropics/claude-plugins-official、affaan-m/ECC、xerj-org/xerj、K-Dense-AI/scientific-agent-skills\n- **Hacker News**（6 条）：DeepSeek-v4.1-Flash-1017、You could have invented transformers from memory、Ultramarine 1 Flash、Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console、Solar surpasses nuclear power globally for first time、Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware\n- **GitHub Trending · TypeScript**（6 条）：chthollyphile/folia-major、cursor/plugins、krillinai/OpenCreator、thesysdev/openui、elie222/rakazo、Fission-AI/OpenSpec\n- **GitHub Trending · Python**（6 条）：yt-dlp/yt-dlp、ScrapeCreators/social-media-research-skills、google/artemis、bmad-code-org/BMAD-METHOD、The-Swarm-Corporation/AutoHedge、lightseekorg/tokenspeed\n\n## 一句话提醒\n\n当前为无 AI 模式（未配置 LLM_API_KEY），以上内容由模板生成。",
   "sections": [
     {
       "id": "main",
@@ -13,22 +13,6 @@
   ],
   "items": [
     {
-      "title": "harry0703/MoneyPrinterTurbo",
-      "url": "https://github.com/harry0703/MoneyPrinterTurbo",
-      "source": "GitHub Trending · Python",
-      "section": "main",
-      "score": 1.0,
-      "desc": "利用 AI 大模型和自动化工作流，根据主题或关键词一键生成高清短视频。Generate HD short videos from a topic or keyword with an automated AI workflow.",
-      "extra": {
-        "stars_today": 723,
-        "stars_total": 132081,
-        "language": "Python",
-        "section": "main",
-        "norm_score": 1.0,
-        "raw_score": 73620.81
-      }
-    },
-    {
       "title": "debpalash/VoiceStudio",
       "url": "https://github.com/debpalash/VoiceStudio",
       "source": "GitHub Trending · 全语言",
@@ -36,124 +20,124 @@
       "score": 1.0,
       "desc": "VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.",
       "extra": {
-        "stars_today": 2301,
-        "stars_total": 70715,
+        "stars_today": 2135,
+        "stars_total": 72897,
         "language": "Python",
         "section": "main",
         "norm_score": 1.0,
-        "raw_score": 230807.15
+        "raw_score": 214228.97
       }
     },
     {
-      "title": "Woman who rescued injured crow keeps getting 'thank-you gifts' from birds [video]",
-      "url": "https://www.youtube.com/watch?v=sjNpfz4UzqU",
+      "title": "DeepSeek-v4.1-Flash-1017",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
       "source": "Hacker News",
       "section": "main",
       "score": 1.0,
-      "desc": "",
+      "desc": "<a href=\"https:&#x2F;&#x2F;api-docs.deepseek.com&#x2F;news&#x2F;news261017&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;api-docs.deepseek.com&#x2F;news&#x2F;news261017&#x2F;</a><p><a href=\"https:&#x2F;&#x2",
       "extra": {
-        "hn_id": 50065859,
-        "comments": 234,
-        "discuss": "https://news.ycombinator.com/item?id=50065859",
+        "hn_id": 50129045,
+        "comments": 470,
+        "discuss": "https://news.ycombinator.com/item?id=50129045",
         "section": "main",
         "norm_score": 1.0,
-        "raw_score": 777.0
+        "raw_score": 487.0
       }
     },
     {
-      "title": "morluto/rea",
-      "url": "https://github.com/morluto/rea",
+      "title": "chthollyphile/folia-major",
+      "url": "https://github.com/chthollyphile/folia-major",
       "source": "GitHub Trending · TypeScript",
       "section": "main",
       "score": 1.0,
-      "desc": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "desc": "专注于绚丽的歌词动画效果的本地音乐/navidrome/第三方多平台在线音乐播放器",
       "extra": {
-        "stars_today": 25333,
-        "stars_total": 288621,
+        "stars_today": 559,
+        "stars_total": 7601,
         "language": "TypeScript",
         "section": "main",
         "norm_score": 1.0,
-        "raw_score": 2536186.21
+        "raw_score": 55976.01
       }
     },
     {
-      "title": "rohitg00/ai-engineering-from-scratch",
-      "url": "https://github.com/rohitg00/ai-engineering-from-scratch",
+      "title": "yt-dlp/yt-dlp",
+      "url": "https://github.com/yt-dlp/yt-dlp",
       "source": "GitHub Trending · Python",
       "section": "main",
-      "score": 0.835,
-      "desc": "Learn AI Engineering! Learn it. Build it. Ship it for others.",
+      "score": 1.0,
+      "desc": "A feature-rich command-line audio/video downloader",
       "extra": {
-        "stars_today": 613,
-        "stars_total": 70204,
+        "stars_today": 411,
+        "stars_total": 198844,
         "language": "Python",
         "section": "main",
-        "norm_score": 0.8345,
-        "raw_score": 62002.04
+        "norm_score": 1.0,
+        "raw_score": 43088.44
       }
     },
     {
-      "title": "xerj-org/xerj",
-      "url": "https://github.com/xerj-org/xerj",
+      "title": "MadsLorentzen/ai-job-search",
+      "url": "https://github.com/MadsLorentzen/ai-job-search",
       "source": "GitHub Trending · 全语言",
       "section": "main",
-      "score": 0.709,
-      "desc": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
+      "score": 0.622,
+      "desc": "The job search that runs on your machine. AI job application framework built on Claude Code: evaluate postings, tailor CVs, write cover letters, prep interviews. Fork it and own it.",
       "extra": {
-        "stars_today": 1647,
-        "stars_total": 6770,
-        "language": "Rust",
-        "section": "main",
-        "norm_score": 0.7094,
-        "raw_score": 164767.7
-      }
-    },
-    {
-      "title": "Tesla Roadster",
-      "url": "https://www.tesla.com/roadster",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.843,
-      "desc": "<a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=7p5LxFdc-Qg\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=7p5LxFdc-Qg</a><p><a href=\"https:&#x2F;&#x2F;twitter.com&#x2F;Tesla&#",
-      "extra": {
-        "hn_id": 50112657,
-        "comments": 1073,
-        "discuss": "https://news.ycombinator.com/item?id=50112657",
-        "section": "main",
-        "norm_score": 0.8435,
-        "raw_score": 656.0
-      }
-    },
-    {
-      "title": "stablyai/orca",
-      "url": "https://github.com/stablyai/orca",
-      "source": "GitHub Trending · TypeScript",
-      "section": "main",
-      "score": 0.043,
-      "desc": "Orca is the ADE for working with a fleet of parallel agents. Run any coding agent with your own subscription. Available on desktop, mobile and remote runtime.",
-      "extra": {
-        "stars_today": 1089,
-        "stars_total": 94375,
-        "language": "TypeScript",
-        "section": "main",
-        "norm_score": 0.043,
-        "raw_score": 109843.75
-      }
-    },
-    {
-      "title": "ifixai-ai/iFixAi",
-      "url": "https://github.com/ifixai-ai/iFixAi",
-      "source": "GitHub Trending · Python",
-      "section": "main",
-      "score": 0.688,
-      "desc": "Independent Auditing of AI Agents. Run by human or the agent itself, to answer the most crucial question in the AI Agent Economy. Is the agent doing what is supposed to do? With iFixAi you can have this answer in less than 120 seconds.",
-      "extra": {
-        "stars_today": 514,
-        "stars_total": 28674,
+        "stars_today": 1397,
+        "stars_total": 49946,
         "language": "Python",
         "section": "main",
-        "norm_score": 0.6876,
-        "raw_score": 51686.74
+        "norm_score": 0.6221,
+        "raw_score": 140199.46
+      }
+    },
+    {
+      "title": "You could have invented transformers from memory",
+      "url": "https://alexwang.ai/posts/associative-memory/",
+      "source": "Hacker News",
+      "section": "main",
+      "score": 0.885,
+      "desc": "<a href=\"https:&#x2F;&#x2F;twitter.com&#x2F;heyyalexwang&#x2F;status&#x2F;2111158818730397932\" rel=\"nofollow\">https:&#x2F;&#x2F;twitter.com&#x2F;heyyalexwang&#x2F;status&#x2F;2111158818730397932</a>",
+      "extra": {
+        "hn_id": 50122878,
+        "comments": 101,
+        "discuss": "https://news.ycombinator.com/item?id=50122878",
+        "section": "main",
+        "norm_score": 0.8847,
+        "raw_score": 432.0
+      }
+    },
+    {
+      "title": "cursor/plugins",
+      "url": "https://github.com/cursor/plugins",
+      "source": "GitHub Trending · TypeScript",
+      "section": "main",
+      "score": 0.674,
+      "desc": "Cursor plugin specification and official plugins",
+      "extra": {
+        "stars_today": 384,
+        "stars_total": 12243,
+        "language": "TypeScript",
+        "section": "main",
+        "norm_score": 0.6739,
+        "raw_score": 38522.43
+      }
+    },
+    {
+      "title": "ScrapeCreators/social-media-research-skills",
+      "url": "https://github.com/ScrapeCreators/social-media-research-skills",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.306,
+      "desc": "AI agent skills for social media research. Outlier posts, comment mining, competitor teardowns, ad libraries & trends across TikTok, Instagram, YouTube, Reddit, X, LinkedIn & more. Powered by ScrapeCreators. Works with Claude Code, Cursor, Codex, Gemini CLI.",
+      "extra": {
+        "stars_today": 140,
+        "stars_total": 4014,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.3064,
+        "raw_score": 14040.14
       }
     },
     {
@@ -161,127 +145,63 @@
       "url": "https://github.com/anthropics/claude-plugins-official",
       "source": "GitHub Trending · 全语言",
       "section": "main",
-      "score": 0.669,
+      "score": 0.615,
       "desc": "Official, Anthropic-managed directory of high quality Claude Code Plugins.",
       "extra": {
-        "stars_today": 1552,
-        "stars_total": 40309,
+        "stars_today": 1383,
+        "stars_total": 41495,
         "language": "Python",
         "section": "main",
-        "norm_score": 0.669,
-        "raw_score": 155603.09
+        "norm_score": 0.6146,
+        "raw_score": 138714.95
       }
     },
     {
-      "title": "I Love Software Rendering",
-      "url": "https://www.jamesfmackenzie.com/2026/10/13/i-love-software-rendering/",
+      "title": "Ultramarine 1 Flash",
+      "url": "https://www.paperinstruments.com/ultramarine",
       "source": "Hacker News",
       "section": "main",
-      "score": 0.32,
-      "desc": "",
+      "score": 0.727,
+      "desc": "<a href=\"https:&#x2F;&#x2F;www.paperinstruments.com&#x2F;blog&#x2F;ultramarine\">https:&#x2F;&#x2F;www.paperinstruments.com&#x2F;blog&#x2F;ultramarine</a><p><a href=\"https:&#x2F;&#x2F;twitter.com&#x2F;",
       "extra": {
-        "hn_id": 50117746,
-        "comments": 168,
-        "discuss": "https://news.ycombinator.com/item?id=50117746",
+        "hn_id": 50106747,
+        "comments": 104,
+        "discuss": "https://news.ycombinator.com/item?id=50106747",
         "section": "main",
-        "norm_score": 0.3195,
-        "raw_score": 251.0
+        "norm_score": 0.7275,
+        "raw_score": 357.0
       }
     },
     {
-      "title": "LibreSpark/LibreTV",
-      "url": "https://github.com/LibreSpark/LibreTV",
+      "title": "krillinai/OpenCreator",
+      "url": "https://github.com/krillinai/OpenCreator",
       "source": "GitHub Trending · TypeScript",
       "section": "main",
-      "score": 0.033,
-      "desc": "一分钟搭建影视站，支持Docker等部署方式",
+      "score": 0.327,
+      "desc": "Formerly KrillinAI, VideoTranslation and Dubbing Tool. Open-source AI workspace for creators, powered by Codex. Video downloading, video translation, create videos, images, voice, avatars, and edits with Agents in one place. Suitable for your Social Media like YouTube, TikTok, Instagram, etc.",
       "extra": {
-        "stars_today": 850,
-        "stars_total": 18798,
+        "stars_today": 198,
+        "stars_total": 13613,
         "language": "TypeScript",
         "section": "main",
-        "norm_score": 0.0333,
-        "raw_score": 85187.98
+        "norm_score": 0.3266,
+        "raw_score": 19936.13
       }
     },
     {
-      "title": "lightseekorg/tokenspeed",
-      "url": "https://github.com/lightseekorg/tokenspeed",
+      "title": "google/artemis",
+      "url": "https://github.com/google/artemis",
       "source": "GitHub Trending · Python",
       "section": "main",
-      "score": 0.485,
-      "desc": "TokenSpeed is a speed-of-light LLM inference engine.",
+      "score": 0.296,
+      "desc": "ARTEMIS turns natural-language instructions into reliable Android automation. It automates end-to-end workflows, captures logs, and integrates seamlessly with AI coding assistants such as Antigravity, Codex, and Claude Code. It also achieves 99%+ success rate on AndroidWorld Benchmark.",
       "extra": {
-        "stars_today": 374,
-        "stars_total": 2665,
+        "stars_today": 135,
+        "stars_total": 12141,
         "language": "Python",
         "section": "main",
-        "norm_score": 0.4845,
-        "raw_score": 37426.65
-      }
-    },
-    {
-      "title": "K-Dense-AI/scientific-agent-skills",
-      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
-      "source": "GitHub Trending · 全语言",
-      "section": "main",
-      "score": 0.496,
-      "desc": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
-      "extra": {
-        "stars_today": 1158,
-        "stars_total": 51340,
-        "language": "Python",
-        "section": "main",
-        "norm_score": 0.4961,
-        "raw_score": 116313.4
-      }
-    },
-    {
-      "title": "90% of US working hours are spent on tasks not covered well by AI benchmarks",
-      "url": "https://www.mercor.com/research/labor-index/benchmark-map/",
-      "source": "Hacker News",
-      "section": "main",
-      "score": 0.294,
-      "desc": "",
-      "extra": {
-        "hn_id": 50121179,
-        "comments": 201,
-        "discuss": "https://news.ycombinator.com/item?id=50121179",
-        "section": "main",
-        "norm_score": 0.2937,
-        "raw_score": 231.0
-      }
-    },
-    {
-      "title": "heygen-com/hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes",
-      "source": "GitHub Trending · TypeScript",
-      "section": "main",
-      "score": 0.033,
-      "desc": "Write HTML. Render video. Built for agents.",
-      "extra": {
-        "stars_today": 826,
-        "stars_total": 65198,
-        "language": "TypeScript",
-        "section": "main",
-        "norm_score": 0.0325,
-        "raw_score": 83251.98
-      }
-    },
-    {
-      "title": "earthtojake/text-to-cad",
-      "url": "https://github.com/earthtojake/text-to-cad",
-      "source": "GitHub Trending · Python",
-      "section": "main",
-      "score": 0.392,
-      "desc": "Give your agent CAD superpowers.",
-      "extra": {
-        "stars_today": 307,
-        "stars_total": 20942,
-        "language": "Python",
-        "section": "main",
-        "norm_score": 0.3917,
-        "raw_score": 30909.42
+        "norm_score": 0.2964,
+        "raw_score": 13621.41
       }
     },
     {
@@ -289,111 +209,191 @@
       "url": "https://github.com/affaan-m/ECC",
       "source": "GitHub Trending · 全语言",
       "section": "main",
-      "score": 0.462,
+      "score": 0.505,
       "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
       "extra": {
-        "stars_today": 1057,
-        "stars_total": 281283,
+        "stars_today": 1145,
+        "stars_total": 282243,
         "language": "JavaScript",
         "section": "main",
-        "norm_score": 0.4618,
-        "raw_score": 108512.83
+        "norm_score": 0.5054,
+        "raw_score": 117322.43
       }
     },
     {
-      "title": "Apple ML Research: Muse Spark Open with MLX on Mac Studio",
-      "url": "https://machinelearning.apple.com/research/mlx-distributed-inference",
+      "title": "Llama.cpp on a jailbroken PS5: run any GGUF model natively on the console",
+      "url": "https://github.com/cobanov/PS5LM",
       "source": "Hacker News",
       "section": "main",
-      "score": 0.263,
+      "score": 0.725,
       "desc": "",
       "extra": {
-        "hn_id": 50118320,
-        "comments": 97,
-        "discuss": "https://news.ycombinator.com/item?id=50118320",
+        "hn_id": 50122431,
+        "comments": 83,
+        "discuss": "https://news.ycombinator.com/item?id=50122431",
         "section": "main",
-        "norm_score": 0.2626,
-        "raw_score": 207.0
+        "norm_score": 0.7254,
+        "raw_score": 356.0
       }
     },
     {
-      "title": "anomalyco/opencode",
-      "url": "https://github.com/anomalyco/opencode",
+      "title": "thesysdev/openui",
+      "url": "https://github.com/thesysdev/openui",
       "source": "GitHub Trending · TypeScript",
       "section": "main",
-      "score": 0.02,
-      "desc": "The open source coding agent.",
+      "score": 0.311,
+      "desc": "The Open Standard for Generative UI",
       "extra": {
-        "stars_today": 485,
-        "stars_total": 214294,
+        "stars_today": 190,
+        "stars_total": 11517,
         "language": "TypeScript",
         "section": "main",
-        "norm_score": 0.0197,
-        "raw_score": 50642.94
+        "norm_score": 0.3113,
+        "raw_score": 19115.17
       }
     },
     {
-      "title": "Imbad0202/academic-research-skills",
-      "url": "https://github.com/Imbad0202/academic-research-skills",
+      "title": "bmad-code-org/BMAD-METHOD",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD",
       "source": "GitHub Trending · Python",
       "section": "main",
-      "score": 0.321,
-      "desc": "Academic Research Skills for Claude Code: research → write → review → revise → finalize",
+      "score": 0.082,
+      "desc": "Breakthrough Method for Agile Ai Driven Development",
       "extra": {
-        "stars_today": 254,
-        "stars_total": 52394,
+        "stars_today": 41,
+        "stars_total": 54262,
         "language": "Python",
         "section": "main",
-        "norm_score": 0.3207,
-        "raw_score": 25923.94
+        "norm_score": 0.082,
+        "raw_score": 4642.62
       }
     },
     {
-      "title": "obra/superpowers",
-      "url": "https://github.com/obra/superpowers",
+      "title": "xerj-org/xerj",
+      "url": "https://github.com/xerj-org/xerj",
       "source": "GitHub Trending · 全语言",
       "section": "main",
-      "score": 0.426,
-      "desc": "An agentic skills framework & software development methodology that works.",
+      "score": 0.469,
+      "desc": "XERJ is the new way for AI to search data. Its autoindex capability activates agents to know your data without the token waste of grep and sed. One command indexes code, docs, logs and PDFs for search, RAG, security audits and agent memory, using 40x fewer tokens than grep. Elasticsearch compatible, so existing clients just work.",
       "extra": {
-        "stars_today": 973,
-        "stars_total": 300570,
-        "language": "Shell",
+        "stars_today": 1102,
+        "stars_total": 7625,
+        "language": "Rust",
         "section": "main",
-        "norm_score": 0.4257,
-        "raw_score": 100305.7
+        "norm_score": 0.4694,
+        "raw_score": 110276.25
       }
     },
     {
-      "title": "Claude reveals ECDSA curve origins",
-      "url": "https://www.anthropic.com/research/ecdsa-curve-origins",
+      "title": "Solar surpasses nuclear power globally for first time",
+      "url": "https://www.pv-magazine.com/2026/09/29/solar-surpasses-nuclear-power-globally-for-first-time/",
       "source": "Hacker News",
       "section": "main",
-      "score": 0.199,
+      "score": 0.639,
       "desc": "",
       "extra": {
-        "hn_id": 50122800,
-        "comments": 66,
-        "discuss": "https://news.ycombinator.com/item?id=50122800",
+        "hn_id": 50131256,
+        "comments": 171,
+        "discuss": "https://news.ycombinator.com/item?id=50131256",
         "section": "main",
-        "norm_score": 0.1992,
-        "raw_score": 158.0
+        "norm_score": 0.6394,
+        "raw_score": 315.0
       }
     },
     {
-      "title": "OpenCut-app/OpenCut",
-      "url": "https://github.com/OpenCut-app/OpenCut",
+      "title": "elie222/rakazo",
+      "url": "https://github.com/elie222/rakazo",
       "source": "GitHub Trending · TypeScript",
       "section": "main",
-      "score": 0.01,
-      "desc": "The open-source CapCut alternative",
+      "score": 0.228,
+      "desc": "Open-source Grok Bot alternative. Choose your own model and sandbox.",
       "extra": {
-        "stars_today": 256,
-        "stars_total": 94922,
+        "stars_today": 146,
+        "stars_total": 4435,
         "language": "TypeScript",
         "section": "main",
-        "norm_score": 0.0101,
-        "raw_score": 26549.22
+        "norm_score": 0.2278,
+        "raw_score": 14644.35
+      }
+    },
+    {
+      "title": "The-Swarm-Corporation/AutoHedge",
+      "url": "https://github.com/The-Swarm-Corporation/AutoHedge",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.044,
+      "desc": "Build your autonomous hedge fund in minutes. AutoHedge harnesses the power of swarm intelligence and AI agents to automate market analysis, risk management, and trade execution.",
+      "extra": {
+        "stars_today": 30,
+        "stars_total": 6349,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.0443,
+        "raw_score": 3063.49
+      }
+    },
+    {
+      "title": "K-Dense-AI/scientific-agent-skills",
+      "url": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "source": "GitHub Trending · 全语言",
+      "section": "main",
+      "score": 0.358,
+      "desc": "Turn any AI agent into an AI Scientist. The #1 Agent Skills library for science, used by 250,000+ scientists worldwide. 177 ready-to-use validated skills plus 100+ scientific databases covering biology, chemistry, medicine, and drug discovery. Compatible with Cursor, Claude Code, Codex, Pi, Antigravity, and the open Agent Skills standard.",
+      "extra": {
+        "stars_today": 879,
+        "stars_total": 52119,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.3578,
+        "raw_score": 88421.19
+      }
+    },
+    {
+      "title": "Show HN: Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+      "url": "https://llmspeed.dev/",
+      "source": "Hacker News",
+      "section": "main",
+      "score": 0.419,
+      "desc": "",
+      "extra": {
+        "hn_id": 50127979,
+        "comments": 67,
+        "discuss": "https://news.ycombinator.com/item?id=50127979",
+        "section": "main",
+        "norm_score": 0.4193,
+        "raw_score": 210.0
+      }
+    },
+    {
+      "title": "Fission-AI/OpenSpec",
+      "url": "https://github.com/Fission-AI/OpenSpec",
+      "source": "GitHub Trending · TypeScript",
+      "section": "main",
+      "score": 0.132,
+      "desc": "Spec-driven development (SDD) for AI coding assistants.",
+      "extra": {
+        "stars_today": 88,
+        "stars_total": 72231,
+        "language": "TypeScript",
+        "section": "main",
+        "norm_score": 0.1321,
+        "raw_score": 9522.31
+      }
+    },
+    {
+      "title": "lightseekorg/tokenspeed",
+      "url": "https://github.com/lightseekorg/tokenspeed",
+      "source": "GitHub Trending · Python",
+      "section": "main",
+      "score": 0.043,
+      "desc": "TokenSpeed is a speed-of-light LLM inference engine.",
+      "extra": {
+        "stars_today": 30,
+        "stars_total": 2687,
+        "language": "Python",
+        "section": "main",
+        "norm_score": 0.0435,
+        "raw_score": 3026.87
       }
     }
   ]
